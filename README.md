@@ -2,6 +2,9 @@
 
 Kuku AI Generalist Assignment, **Problem 1: Find the Promos**.
 
+**Live demo:** https://promo-finder-demo.streamlit.app. It runs on an original 3-episode demo show, or you can upload
+a .zip of episode screenplays. AI mode needs `GROQ_API_KEY` in the app's secrets; without it, the app runs rules-only.
+
 Reads a folder (or .zip) of timestamped episode screenplays and returns ranked 20–60 s promos. Each promo
 comes with the episode and start/end timestamps of every segment, the hook, the cliffhanger, a one-line
 "why", and QA results.
@@ -24,6 +27,9 @@ python run.py --input show/ --picker groq:qwen/qwen3.8-27b     # swap the model 
 python run.py --input show/ --review                           # editor approves picks; approvals feed the RAG playbook
 
 python eval/evaluate.py outputs/rules-only outputs/gpt-oss-120b   # score runs against hand-picked reference promos
+
+streamlit run streamlit_app.py                                 # the web demo, locally
+python samples/make_demo_show.py                               # regenerate the original demo show in samples/
 
 uvicorn app:app --port 7860                                    # REST API, docs at http://localhost:7860/docs
 docker build -t promo-finder . && docker run -p 7860:7860 -e GROQ_API_KEY=... promo-finder

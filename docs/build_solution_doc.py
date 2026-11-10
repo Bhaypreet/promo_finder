@@ -26,6 +26,8 @@ ev = {r["run"]: r for r in json.loads((ROOT / "outputs" / "eval_results.json").r
 ev_random = next(v for k, v in ev.items() if k.startswith("random"))
 totals = json.loads((ROOT / "docs" / "facts.json").read_text(encoding="utf-8"))["totals"]
 DRIVE = "https://drive.google.com/drive/folders/1QTSzxsaEqu4_PbWOeR150AJ3hQIbad43"
+DEMO = "https://promo-finder-demo.streamlit.app"
+REPO = "https://github.com/Bhaypreet/promo_finder"
 
 # ---------- fonts and styles ----------
 REG, BOLD = "Helvetica", "Helvetica-Bold"
@@ -130,9 +132,10 @@ def cut_of(pid):
 # ---------- page 1 ----------
 story = [
     p("Promo Finder: ranked promo cut lists from screenplays", TITLE), Spacer(1, 2),
-    p(f"Kuku AI Generalist Assignment &middot; Problem 1, Find the Promos &middot; "
-      f"Prototype, code and raw outputs: <link href='{DRIVE}' color='#a3214f'><u>project folder</u></link> "
-      f"(run steps in README.md)", SUB),
+    p(f"Kuku AI Generalist Assignment &middot; Problem 1, Find the Promos<br/>"
+      f"Live demo: <link href='{DEMO}' color='#a3214f'><u>promo-finder-demo.streamlit.app</u></link> &middot; "
+      f"Code: <link href='{REPO}' color='#a3214f'><u>github.com/Bhaypreet/promo_finder</u></link> &middot; "
+      f"Raw outputs: <link href='{DRIVE}' color='#a3214f'><u>project folder</u></link>", SUB),
     Spacer(1, 3),
     p("Give the tool a folder or .zip of episode screenplays. It returns a ranked list of 20-60 s promos. Each one comes "
       "with the episode and start/end time of every segment, the hook, the cliffhanger, a one-line reason it works, and "
@@ -196,8 +199,8 @@ story = [
         "$0 on Groq's free tier; under $0.10 at Groq's published paid rates. The rules-only mode is free and runs in under a second.",
         f"<b>Time:</b> {totals['minutes']} minutes on the free tier, set by its rate limits (about 8K tokens a minute), not "
         "by compute. Episodes are processed in parallel, so a paid tier or an in-house model cuts this to minutes.",
-        "<b>Every show, every week:</b> a FastAPI service with a Dockerfile. Upload a zip, get the cut list. Model answers "
-        "and the search index are cached, so reruns are free.",
+        "<b>Every show, every week:</b> a FastAPI service with a Dockerfile, plus the hosted demo. Upload a zip, get the "
+        "cut list. Model answers and the search index are cached, so reruns are free.",
         "<b>Editor time</b> goes from watching every episode to reviewing a ranked top 10. "
         "<b>Next measure:</b> each posted promo's 3-second view rate, click-through and Episode 1-to-5 retention, used to re-weight the ranking.",
     ], S),
