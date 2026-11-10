@@ -1,0 +1,12 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "picker": "rules",
+  "fallback": null,
+  "viewer": null,
+  "playbook_rag": false,
+  "episodes": 50,
+  "beats": 3727,
+  "seconds": 0.7,
+  "usage": {},
+  "input": "data\\I Married a Broken Soldier. He was a Duke"
+}

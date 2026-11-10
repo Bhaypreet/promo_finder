@@ -1,0 +1,10 @@
+{
+  "_about": "Totals for the full 50-episode run on Groq's free tier, summed from outputs/groq_run.log (first pass) and outputs/groq_run2.log (viewer checks re-run after rate-limit errors). run_meta.json only shows the final, cached rerun.",
+  "totals": {
+    "calls": 142,
+    "tokens": 267078,
+    "picker_tokens": 209114,
+    "viewer_tokens": 57964,
+    "minutes": 47
+  }
+}

@@ -1,0 +1,16 @@
+data/
+*.zip
+Kuku*.pdf
+Data_*.pdf
+.env
+.venv/
+.cache/
+__pycache__/
+eval/_random/
+outputs/_*/
+_old_claude_version/
+Kuku_Promo_Finder_upload/
+.streamlit/secrets.toml
+docs/explainer.html
+docs/explainer_template.html
+docs/build_explainer.py

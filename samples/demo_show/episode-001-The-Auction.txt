@@ -1,0 +1,110 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: Mara Quinn, the disinherited daughter of a shipping family, is forced to watch her late mother's necklace auctioned off by her stepsister, until a silent stranger in the back row places a bid nobody can match.
+CONTINUITY NOTES: First episode. Establishes Mara's disinheritance, her stepsister Celeste and the stranger, Adrian.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. QUINN ESTATE BALLROOM - NIGHT
+Scene start: 00:00.00
+Scene end: 00:58.20
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:03.00)
+Wide shot of a glittering ballroom; guests in evening wear face a small auction stage.
+
+**ACTION:**
+Start: (00:03.00) | End: (00:06.00)
+Celeste lifts a sapphire necklace from a velvet case and holds it up to the crowd.
+
+**CELESTE (Gloating, Cruel):**
+Start: (00:06.00) | End: (00:08.60)
+"Lot nine. My stepsister's dead mother's sapphires."
+
+**CAMERA:**
+Start: (00:08.60) | End: (00:10.60)
+Close-up on Mara at the edge of the room, frozen, a serving tray in her hands.
+
+**MARA (Shocked, Whispering):**
+Start: (00:10.60) | End: (00:12.60)
+"You promised me that necklace."
+
+**CELESTE (Mocking):**
+Start: (00:12.60) | End: (00:15.60)
+"I promised you a job, Mara. Keep pouring the champagne."
+
+**ACTION:**
+Start: (00:15.60) | End: (00:18.80)
+Guests laugh. Mara's tray tilts and a glass shatters on the marble floor.
+
+**SOUND FX:**
+Start: (00:18.80) | End: (00:20.30)
+Sharp crash of breaking glass, then silence.
+
+**MOTHER-IN-LAW (Cold, Commanding):**
+Start: (00:20.30) | End: (00:23.30)
+"Clean it up. On your knees, where you belong."
+
+**CAMERA:**
+Start: (00:23.30) | End: (00:25.80)
+Low angle as Mara kneels among the shards, her hand bleeding.
+
+**CELESTE (Smug):**
+Start: (00:25.80) | End: (00:28.20)
+"Bidding starts at fifty thousand. Anyone?"
+
+**GUEST (Amused):**
+Start: (00:28.20) | End: (00:29.80)
+"Fifty-five!"
+
+**GUEST 2 (Eager):**
+Start: (00:29.80) | End: (00:31.40)
+"Sixty!"
+
+**ACTION:**
+Start: (00:31.40) | End: (00:34.40)
+In the last row, a man in a plain grey coat raises a single finger without standing.
+
+**ADRIAN (Calm, Lethal):**
+Start: (00:34.40) | End: (00:36.80)
+"Two million."
+
+**SOUND FX:**
+Start: (00:36.80) | End: (00:38.80)
+The room falls silent; a gasp ripples through the guests.
+
+**CAMERA:**
+Start: (00:38.80) | End: (00:41.40)
+Close-up on Celeste, her smile collapsing.
+
+**CELESTE (Stunned):**
+Start: (00:41.40) | End: (00:43.40)
+"Who are you?"
+
+**ACTION:**
+Start: (00:43.40) | End: (00:46.60)
+Adrian walks to Mara, kneels in the glass beside her and wraps her bleeding hand in his handkerchief.
+
+**ADRIAN (Quiet, Protective):**
+Start: (00:46.60) | End: (00:49.60)
+"The necklace is hers. So is everything you took from her."
+
+**MARA (Trembling):**
+Start: (00:49.60) | End: (00:51.60)
+"I don't even know your name."
+
+**ADRIAN (Ominous):**
+Start: (00:51.60) | End: (00:54.60)
+"You will. By morning, so will your whole family."
+
+**SOUND FX:**
+Start: (00:54.60) | End: (00:57.20)
+Low ominous string swell into a cliffhanger sting.
+
+**CAMERA:**
+Start: (00:57.20) | End: (00:58.20)
+Cut to black.
+
+--- SCRIPT END ---

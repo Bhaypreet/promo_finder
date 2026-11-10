@@ -1,0 +1,125 @@
+  ep  1: 2 promos
+  ep  2: 2 promos
+  ep  5: 1 promos
+  ep  3: 1 promos
+  ep  6: 1 promos
+  ep  7: 2 promos
+  ep  4: 3 promos
+  ep  8: 0 promos
+  ep 10: 1 promos
+  ep 12: 1 promos
+  ep  9: 1 promos
+  ep 13: 1 promos
+  ep 14: 1 promos
+  ep 16: 1 promos
+  ep 17: 1 promos
+  ep 15: 3 promos
+  ep 18: 1 promos
+  ep 19: 2 promos
+  ep 11: 1 promos
+  ep 22: 1 promos
+  ep 21: 1 promos
+  ep 23: 1 promos
+  ep 20: 2 promos
+  ep 25: 2 promos
+  ep 24: 1 promos
+  ep 26: 1 promos
+  ep 29: 1 promos
+  ep 27: 3 promos
+  ep 31: 1 promos
+  ep 32: 1 promos
+  ep 28: 3 promos
+  ep 33: 2 promos
+  ep 30: 1 promos
+  ep 34: 1 promos
+  ep 35: 2 promos
+  ep 36: 1 promos
+  ep 37: 1 promos
+  ep 38: 1 promos
+  ep 39: 1 promos
+  ep 40: 1 promos
+  ep 41: 1 promos
+  ep 42: 2 promos
+  ep 43: 2 promos
+  ep 45: 1 promos
+  ep 46: 2 promos
+  ep 47: 1 promos
+  ep 48: 1 promos
+  ep 49: 1 promos
+  ep 44: 1 promos
+  ep 50: 1 promos
+  viewer E02-P1: stop 2 next 3 understood 8
+  viewer E01-P2: stop 3 next 4 understood 4
+  viewer E01-P1: stop 7 next 6 understood 8
+  viewer E03-P1: stop 4 next 4 understood 3
+  viewer E02-P2: stop 2 next 2 understood 3
+  viewer E04-P2: stop 2 next 2 understood 3
+  viewer E04-P3: stop 4 next 3 understood 2
+  viewer E05-P1: stop 7 next 9 understood 8
+  viewer E04-P1: stop 2 next 2 understood 3
+  viewer E07-P1: stop 2 next 3 understood 3
+  viewer E06-P1: stop 2 next 3 understood 2
+  viewer E09-P1: stop 3 next 4 understood 6
+  viewer E10-P1: stop 2 next 3 understood 3
+  viewer E11-P1: stop 3 next 4 understood 2
+  viewer E14-P1: stop 4 next 4 understood 4
+  viewer E12-P1: stop 2 next 3 understood 3
+  viewer E15-P2: stop 4 next 5 understood 3
+  viewer E15-P3: stop 2 next 3 understood 4
+  viewer E15-P1: stop 4 next 3 understood 4
+  viewer E16-P1: stop 7 next 6 understood 4
+  viewer E18-P1: stop 7 next 8 understood 7
+  viewer E17-P1: stop 2 next 2 understood 4
+  viewer E19-P1: stop 6 next 8 understood 7
+  viewer E19-P2: stop 7 next 8 understood 7
+  viewer E20-P2: stop 4 next 5 understood 6
+  viewer E20-P1: stop 4 next 5 understood 4
+  viewer E23-P1: stop 4 next 5 understood 4
+  viewer E22-P1: stop 3 next 4 understood 4
+  viewer E25-P2: stop 2 next 3 understood 2
+  viewer E24-P1: stop 2 next 3 understood 3
+  viewer E27-P1: stop 3 next 4 understood 3
+  viewer E27-P2: stop 4 next 5 understood 3
+  viewer E27-P3: stop 3 next 4 understood 2
+  viewer E25-P1: stop 4 next 5 understood 4
+  viewer E28-P2: stop 6 next 8 understood 7
+  viewer E26-P1: stop 4 next 6 understood 4
+  viewer E28-P3: stop 4 next 5 understood 3
+  viewer E30-P1: stop 6 next 7 understood 6
+  viewer E31-P1: stop 2 next 3 understood 2
+  viewer E29-P1: stop 2 next 4 understood 3
+  viewer E32-P1: stop 8 next 9 understood 4
+  viewer E33-P2: stop 7 next 8 understood 4
+  viewer E36-P1: stop 7 next 6 understood 4
+  viewer E37-P1: stop 2 next 3 understood 2
+  viewer E38-P1: stop 2 next 3 understood 2
+  viewer E39-P1: stop 2 next 3 understood 2
+  viewer E34-P1: stop 4 next 6 understood 7
+  viewer E41-P1: stop 7 next 8 understood 4
+  viewer E42-P2: stop 7 next 8 understood 4
+  viewer E43-P2: stop 6 next 7 understood 4
+  viewer E44-P1: stop 4 next 5 understood 4
+  viewer E42-P1: stop 7 next 8 understood 6
+  viewer E46-P1: stop 4 next 5 understood 6
+  viewer E45-P1: stop 8 next 9 understood 9
+  viewer E47-P1: stop 4 next 5 understood 4
+  viewer E48-P1: stop 4 next 5 understood 4
+  viewer E50-P1: stop 4 next 5 understood 3
+  viewer MONTAGE-1: stop 3 next 3 understood 4
+  viewer E46-P2: stop 4 next 5 understood 4
+  viewer E49-P1: stop 4 next 5 understood 4
+  viewer MONTAGE-3: stop 2 next 3 understood 2
+  viewer MONTAGE-2: stop 4 next 6 understood 4
+I Married a Broken Soldier. He was a Duke: 50 episodes -> 71 promos (68 pass all checks) in 2847.1 s -> outputs\gpt-oss-120b
+  groq:openai/gpt-oss-120b: 65 calls, 167415 in / 41699 out tokens, 0 cache hits
+  groq:qwen/qwen3.8-27b: 67 calls, 38477 in / 12105 out tokens, 0 cache hits
+  #1  E13-P1        45.6s  Ep13 00:47.00-00:56.80 + Ep13 01:11.20-01:47.00  | Juliana, stop!
+  #2  E21-P1        42.1s  Ep21 00:03.30-00:40.50 + Ep21 01:36.30-01:41.20  | A thunderous slam bursts the barn doors open, jolting the vi
+  #3  E40-P1        35.6s  Ep40 01:14.50-01:50.08  | "And its witch will be dead."
+  #4  E33-P1        31.5s  Ep33 00:37.30-01:08.80  | Did she use her mother's book?
+  #5  E45-P1        38.8s  Ep45 01:08.60-01:20.50 + Ep45 01:26.30-01:53.20  | CATHERINE (Trembling, Stunned): "Wife?!"
+  #6  E43-P1        47.0s  Ep43 00:03.80-00:50.80  | This man is an imposter! Arrest him!
+  #7  E05-P1        51.2s  Ep5 00:06.60-00:57.80  | Lord Ashcroft coldly declares, "You will not leave this chur
+  #8  E35-P1        39.7s  Ep35 00:52.30-01:32.00  | I buried you.
+  #9  E28-P1        30.4s  Ep28 00:12.60-00:43.00  | She looks exactly like a poisoner.
+  #10 E18-P1        58.2s  Ep18 00:19.30-00:48.80 + Ep18 02:37.80-03:06.50  | A violent crash as the bedroom door is kicked open, flames l

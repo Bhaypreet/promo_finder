@@ -1,0 +1,4109 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "meta": {
+    "show": "I Married a Broken Soldier. He was a Duke",
+    "picker": "rules",
+    "fallback": null,
+    "viewer": null,
+    "playbook_rag": false,
+    "episodes": 50,
+    "beats": 3727,
+    "seconds": 0.7,
+    "usage": {},
+    "input": "data\\I Married a Broken Soldier. He was a Duke"
+  },
+  "promos": [
+    {
+      "id": "R-E36-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 36,
+          "start": 160.0,
+          "end": 200.75,
+          "start_beat": "B099",
+          "end_beat": "B119"
+        }
+      ],
+      "title": "Ep 36 window 1",
+      "hook": "...and killing my wife afterward.",
+      "cliffhanger": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence.",
+      "why": "rules: hook 0.90, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7845,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7845,
+      "rank": 1,
+      "duration": 40.75,
+      "episodes": [
+        36
+      ],
+      "segments_ts": [
+        [
+          36,
+          "02:40.00",
+          "03:20.75"
+        ]
+      ]
+    },
+    {
+      "id": "R-E04-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 4,
+          "start": 114.8,
+          "end": 151.4,
+          "start_beat": "B086",
+          "end_beat": "B108"
+        }
+      ],
+      "title": "Ep 4 window 1",
+      "hook": "You have thrown yourself away!",
+      "cliffhanger": "Heavy oak doors creaking open, followed by a triumphant musical swell fading out into silence.",
+      "why": "rules: hook 0.80, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7364,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7664,
+      "rank": 2,
+      "duration": 36.6,
+      "episodes": [
+        4
+      ],
+      "segments_ts": [
+        [
+          4,
+          "01:54.80",
+          "02:31.40"
+        ]
+      ]
+    },
+    {
+      "id": "R-E36-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 36,
+          "start": 117.0,
+          "end": 148.5,
+          "start_beat": "B071",
+          "end_beat": "B090"
+        }
+      ],
+      "title": "Ep 36 window 2",
+      "hook": "You told them the truth!",
+      "cliffhanger": "What wedding?",
+      "why": "rules: hook 0.95, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7386,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7386,
+      "rank": 3,
+      "duration": 31.5,
+      "episodes": [
+        36
+      ],
+      "segments_ts": [
+        [
+          36,
+          "01:57.00",
+          "02:28.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E05-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 70.3,
+          "end": 110.5,
+          "start_beat": "B041",
+          "end_beat": "B061"
+        }
+      ],
+      "title": "Ep 5 window 1",
+      "hook": "The Mysterious Bearded Man bends his knees and kneels down beside Juliana, extending his scarred hand to retrieve the fallen ledger.",
+      "cliffhanger": "Rain gently pattering on cobblestones beneath a sweeping, melancholic orchestral swell that slowly fades to black.",
+      "why": "rules: hook 0.70, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7006,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7306,
+      "rank": 4,
+      "duration": 40.2,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "01:10.30",
+          "01:50.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E15-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 15,
+          "start": 53.3,
+          "end": 86.0,
+          "start_beat": "B038",
+          "end_beat": "B054"
+        }
+      ],
+      "title": "Ep 15 window 1",
+      "hook": "My mother's plants...",
+      "cliffhanger": "Tense, low dramatic cello swell holding into an abrupt cliffhanger cut.",
+      "why": "rules: hook 0.75, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.72,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.73,
+      "rank": 5,
+      "duration": 32.7,
+      "episodes": [
+        15
+      ],
+      "segments_ts": [
+        [
+          15,
+          "00:53.30",
+          "01:26.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E01-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 1,
+          "start": 91.9,
+          "end": 138.0,
+          "start_beat": "B064",
+          "end_beat": "B093"
+        }
+      ],
+      "title": "Ep 1 window 1",
+      "hook": "You have embarrassed this family long enough.",
+      "cliffhanger": "Solemn low-pitched string drone swells to an ominous cliffhanger peak.",
+      "why": "rules: hook 0.70, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.689,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.719,
+      "rank": 6,
+      "duration": 46.1,
+      "episodes": [
+        1
+      ],
+      "segments_ts": [
+        [
+          1,
+          "01:31.90",
+          "02:18.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E41-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 41,
+          "start": 57.8,
+          "end": 93.8,
+          "start_beat": "B033",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Ep 41 window 1",
+      "hook": "You needed an entire chapel to feel powerful over one chained woman?",
+      "cliffhanger": "Silhouetted armed figures emerge through the smoke and rubble of the breached doorway. Juliana slowly turns her head, glancing back toward the light.",
+      "why": "rules: hook 0.60, cliff 0.80, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7183,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7183,
+      "rank": 7,
+      "duration": 36.0,
+      "episodes": [
+        41
+      ],
+      "segments_ts": [
+        [
+          41,
+          "00:57.80",
+          "01:33.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E16-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 16,
+          "start": 42.3,
+          "end": 83.19,
+          "start_beat": "B035",
+          "end_beat": "B062"
+        }
+      ],
+      "title": "Ep 16 window 1",
+      "hook": "No one!",
+      "cliffhanger": "Slow, resonant emotional cello melody swelling to a dramatic cliffhanger hold.",
+      "why": "rules: hook 0.70, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.71,
+      "rank": 8,
+      "duration": 40.89,
+      "episodes": [
+        16
+      ],
+      "segments_ts": [
+        [
+          16,
+          "00:42.30",
+          "01:23.19"
+        ]
+      ]
+    },
+    {
+      "id": "R-E02-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 2,
+          "start": 74.2,
+          "end": 107.7,
+          "start_beat": "B054",
+          "end_beat": "B072"
+        }
+      ],
+      "title": "Ep 2 window 1",
+      "hook": "You abandoned a woman who trusted you...",
+      "cliffhanger": "...but I will not leave it believing I was the one who should be ashamed.",
+      "why": "rules: hook 0.70, cliff 0.65, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6765,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7065,
+      "rank": 9,
+      "duration": 33.5,
+      "episodes": [
+        2
+      ],
+      "segments_ts": [
+        [
+          2,
+          "01:14.20",
+          "01:47.70"
+        ]
+      ]
+    },
+    {
+      "id": "R-E28-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 28,
+          "start": 101.2,
+          "end": 134.5,
+          "start_beat": "B074",
+          "end_beat": "B093"
+        }
+      ],
+      "title": "Ep 28 window 1",
+      "hook": "The disgraced daughter...",
+      "cliffhanger": "Then perhaps you can explain every page to the magistrate...",
+      "why": "rules: hook 0.75, cliff 0.60, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.7004,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.7004,
+      "rank": 10,
+      "duration": 33.3,
+      "episodes": [
+        28
+      ],
+      "segments_ts": [
+        [
+          28,
+          "01:41.20",
+          "02:14.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E42-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 42,
+          "start": 23.4,
+          "end": 72.5,
+          "start_beat": "B013",
+          "end_beat": "B031"
+        }
+      ],
+      "title": "Ep 42 window 1",
+      "hook": "I said arrest him!",
+      "cliffhanger": "Alexander's mother turns toward the gathered nobility and guards, raising her chin and pointing proudly toward Alexander.",
+      "why": "rules: hook 0.85, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.699,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.699,
+      "rank": 11,
+      "duration": 49.1,
+      "episodes": [
+        42
+      ],
+      "segments_ts": [
+        [
+          42,
+          "00:23.40",
+          "01:12.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E43-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 43,
+          "start": 71.2,
+          "end": 112.8,
+          "start_beat": "B058",
+          "end_beat": "B085"
+        }
+      ],
+      "title": "Ep 43 window 1",
+      "hook": "And when you believed I was dead...",
+      "cliffhanger": "Going somewhere, Lord Sterling?",
+      "why": "rules: hook 0.75, cliff 0.60, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6946,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6946,
+      "rank": 12,
+      "duration": 41.6,
+      "episodes": [
+        43
+      ],
+      "segments_ts": [
+        [
+          43,
+          "01:11.20",
+          "01:52.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E06-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 6,
+          "start": 80.8,
+          "end": 115.0,
+          "start_beat": "B070",
+          "end_beat": "B096"
+        }
+      ],
+      "title": "Ep 6 window 1",
+      "hook": "He strikes flint and steel together over dry kindling, igniting bright sparks that catch into a flickering flame.",
+      "cliffhanger": "Close-up on Juliana looking up into the room with quiet hope in her blue eyes.",
+      "why": "rules: hook 1.00, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6587,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6887,
+      "rank": 13,
+      "duration": 34.2,
+      "episodes": [
+        6
+      ],
+      "segments_ts": [
+        [
+          6,
+          "01:20.80",
+          "01:55.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E20-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 20,
+          "start": 69.0,
+          "end": 109.5,
+          "start_beat": "B041",
+          "end_beat": "B064"
+        }
+      ],
+      "title": "Ep 20 window 1",
+      "hook": "You are a viscount's daughter!",
+      "cliffhanger": "Tracking medium shot following Catherine from behind as she walks gracefully to the window frame, the grey morning light outlining her aristocratic silhouette.",
+      "why": "rules: hook 0.80, cliff 0.55, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6683,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6783,
+      "rank": 14,
+      "duration": 40.5,
+      "episodes": [
+        20
+      ],
+      "segments_ts": [
+        [
+          20,
+          "01:09.00",
+          "01:49.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E35-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 35,
+          "start": 121.8,
+          "end": 157.5,
+          "start_beat": "B056",
+          "end_beat": "B071"
+        }
+      ],
+      "title": "Ep 35 window 1",
+      "hook": "Then why did they never tell us?",
+      "cliffhanger": "A sudden, ominous orchestral crescendo swells dramatically into silence.",
+      "why": "rules: hook 0.75, cliff 0.70, standalone 0.75 (opens on a dependent line)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.676,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.676,
+      "rank": 15,
+      "duration": 35.7,
+      "episodes": [
+        35
+      ],
+      "segments_ts": [
+        [
+          35,
+          "02:01.80",
+          "02:37.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E24-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 24,
+          "start": 67.3,
+          "end": 92.0,
+          "start_beat": "B051",
+          "end_beat": "B066"
+        }
+      ],
+      "title": "Ep 24 window 1",
+      "hook": "The noblewoman whips around sharply, thrusting the tip of her riding crop directly into Prudence's face.",
+      "cliffhanger": "I will return. You cannot stop the healer.",
+      "why": "rules: hook 1.00, cliff 0.60, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6649,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6749,
+      "rank": 16,
+      "duration": 24.7,
+      "episodes": [
+        24
+      ],
+      "segments_ts": [
+        [
+          24,
+          "01:07.30",
+          "01:32.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E15-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 15,
+          "start": 5.0,
+          "end": 53.5,
+          "start_beat": "B006",
+          "end_beat": "B036"
+        }
+      ],
+      "title": "Ep 15 window 2",
+      "hook": "The bald thug roughly rips a massive handful of flowering herbs up by their roots, scattering soil across the path.",
+      "cliffhanger": "Juliana crawls forward on her elbows; fresh crimson blood seeps profusely through her white gauze bandages as she reaches for the ruined blossoms.",
+      "why": "rules: hook 1.00, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6642,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6742,
+      "rank": 17,
+      "duration": 48.5,
+      "episodes": [
+        15
+      ],
+      "segments_ts": [
+        [
+          15,
+          "00:05.00",
+          "00:53.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E38-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 38,
+          "start": 45.3,
+          "end": 87.91,
+          "start_beat": "B029",
+          "end_beat": "B043"
+        }
+      ],
+      "title": "Ep 38 window 1",
+      "hook": "What if I die here?",
+      "cliffhanger": "A sharp, high-tension dramatic swell strikes and echoes out into silence alongside the fading toll of the distant church bells.",
+      "why": "rules: hook 0.75, cliff 0.70, standalone 0.75 (starts on an answer to an unseen question)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6737,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6737,
+      "rank": 18,
+      "duration": 42.61,
+      "episodes": [
+        38
+      ],
+      "segments_ts": [
+        [
+          38,
+          "00:45.30",
+          "01:27.91"
+        ]
+      ]
+    },
+    {
+      "id": "R-E07-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 7,
+          "start": 50.8,
+          "end": 93.8,
+          "start_beat": "B025",
+          "end_beat": "B048"
+        }
+      ],
+      "title": "Ep 7 window 1",
+      "hook": "You chose that scarred beggar over a life of comfort.",
+      "cliffhanger": "What are you staring at?",
+      "why": "rules: hook 0.90, cliff 0.45, standalone 0.70 (spans 3 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6429,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6729,
+      "rank": 19,
+      "duration": 43.0,
+      "episodes": [
+        7
+      ],
+      "segments_ts": [
+        [
+          7,
+          "00:50.80",
+          "01:33.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E45-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 45,
+          "start": 68.6,
+          "end": 117.5,
+          "start_beat": "B046",
+          "end_beat": "B071"
+        }
+      ],
+      "title": "Ep 45 window 1",
+      "hook": "Wife?!",
+      "cliffhanger": "Juliana looks up at Alexander in sudden panic, her fingers gripping his leather-gloved hand.",
+      "why": "rules: hook 0.85, cliff 0.55, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6725,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6725,
+      "rank": 20,
+      "duration": 48.9,
+      "episodes": [
+        45
+      ],
+      "segments_ts": [
+        [
+          45,
+          "01:08.60",
+          "01:57.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E47-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 47,
+          "start": 63.3,
+          "end": 98.8,
+          "start_beat": "B030",
+          "end_beat": "B050"
+        }
+      ],
+      "title": "Ep 47 window 1",
+      "hook": "London closed its doors! My family disowned me!",
+      "cliffhanger": "You want me? As a guest?",
+      "why": "rules: hook 0.85, cliff 0.50, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6706,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6706,
+      "rank": 21,
+      "duration": 35.5,
+      "episodes": [
+        47
+      ],
+      "segments_ts": [
+        [
+          47,
+          "01:03.30",
+          "01:38.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E03-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 3,
+          "start": 94.0,
+          "end": 137.3,
+          "start_beat": "B080",
+          "end_beat": "B112"
+        }
+      ],
+      "title": "Ep 3 window 1",
+      "hook": "You cannot interfere in a family matter!",
+      "cliffhanger": "A collective, stunned gasp rippling across the entire congregation.",
+      "why": "rules: hook 0.80, cliff 0.40, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.636,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.666,
+      "rank": 22,
+      "duration": 43.3,
+      "episodes": [
+        3
+      ],
+      "segments_ts": [
+        [
+          3,
+          "01:34.00",
+          "02:17.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E32-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 32,
+          "start": 119.5,
+          "end": 154.38,
+          "start_beat": "B090",
+          "end_beat": "B115"
+        }
+      ],
+      "title": "Ep 32 window 1",
+      "hook": "Silence! Silence!",
+      "cliffhanger": "Juliana gasps, freezing as the glowing tip of the iron thrusts forward, stopping mere millimeters from her right eye.",
+      "why": "rules: hook 0.70, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6652,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6652,
+      "rank": 23,
+      "duration": 34.88,
+      "episodes": [
+        32
+      ],
+      "segments_ts": [
+        [
+          32,
+          "01:59.50",
+          "02:34.38"
+        ]
+      ]
+    },
+    {
+      "id": "R-E13-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 13,
+          "start": 47.0,
+          "end": 80.5,
+          "start_beat": "B028",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Ep 13 window 1",
+      "hook": "Medium shot of Alexander lunging forward with chained hands raised high, roaring in fury as the Constable grabs him.",
+      "cliffhanger": "Wide tunnel shot through the briars as Juliana crawls deeper into the dark, frozen tangle.",
+      "why": "rules: hook 1.00, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6545,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6645,
+      "rank": 24,
+      "duration": 33.5,
+      "episodes": [
+        13
+      ],
+      "segments_ts": [
+        [
+          13,
+          "00:47.00",
+          "01:20.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E02-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 2,
+          "start": 0.0,
+          "end": 37.2,
+          "start_beat": "B001",
+          "end_beat": "B025"
+        }
+      ],
+      "title": "Ep 2 window 2",
+      "hook": "I cannot marry you, Juliana.",
+      "cliffhanger": "Surely you will not let him humiliate me like this?",
+      "why": "rules: hook 0.75, cliff 0.45, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6319,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6619,
+      "rank": 25,
+      "duration": 37.2,
+      "episodes": [
+        2
+      ],
+      "segments_ts": [
+        [
+          2,
+          "00:00.00",
+          "00:37.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E44-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 44,
+          "start": 49.0,
+          "end": 70.5,
+          "start_beat": "B036",
+          "end_beat": "B053"
+        }
+      ],
+      "title": "Ep 44 window 1",
+      "hook": "You were never my Duchess.",
+      "cliffhanger": "Wide shot from behind Catherine as Alexander turns his back on her and walks resolutely down the rubble-strewn aisle toward Juliana standing in chains at the doorway.",
+      "why": "rules: hook 1.00, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6603,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6603,
+      "rank": 26,
+      "duration": 21.5,
+      "episodes": [
+        44
+      ],
+      "segments_ts": [
+        [
+          44,
+          "00:49.00",
+          "01:10.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E35-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 35,
+          "start": 89.6,
+          "end": 125.5,
+          "start_beat": "B040",
+          "end_beat": "B056"
+        }
+      ],
+      "title": "Ep 35 window 2",
+      "hook": "A traitor?",
+      "cliffhanger": "Then why did they never tell us?",
+      "why": "rules: hook 0.75, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6564,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6564,
+      "rank": 27,
+      "duration": 35.9,
+      "episodes": [
+        35
+      ],
+      "segments_ts": [
+        [
+          35,
+          "01:29.60",
+          "02:05.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E27-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 27,
+          "start": 44.2,
+          "end": 92.8,
+          "start_beat": "B024",
+          "end_beat": "B055"
+        }
+      ],
+      "title": "Ep 27 window 1",
+      "hook": "What is your husband's name?",
+      "cliffhanger": "And you decided you knew better than every physician in this house?",
+      "why": "rules: hook 0.75, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.655,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.655,
+      "rank": 28,
+      "duration": 48.6,
+      "episodes": [
+        27
+      ],
+      "segments_ts": [
+        [
+          27,
+          "00:44.20",
+          "01:32.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E46-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 46,
+          "start": 89.2,
+          "end": 138.8,
+          "start_beat": "B049",
+          "end_beat": "B069"
+        }
+      ],
+      "title": "Ep 46 window 1",
+      "hook": "God did not marry you. A frightened parishioner did, without leave, without license, without the Crown's blessing!",
+      "cliffhanger": "Ten days, Duke. Choose your witnesses well.",
+      "why": "rules: hook 0.75, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.655,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.655,
+      "rank": 29,
+      "duration": 49.6,
+      "episodes": [
+        46
+      ],
+      "segments_ts": [
+        [
+          46,
+          "01:29.20",
+          "02:18.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E03-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 3,
+          "start": 11.1,
+          "end": 46.3,
+          "start_beat": "B008",
+          "end_beat": "B034"
+        }
+      ],
+      "title": "Ep 3 window 2",
+      "hook": "I didn't steal what was never truly yours.",
+      "cliffhanger": "Leave where?",
+      "why": "rules: hook 0.90, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6241,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6541,
+      "rank": 30,
+      "duration": 35.2,
+      "episodes": [
+        3
+      ],
+      "segments_ts": [
+        [
+          3,
+          "00:11.10",
+          "00:46.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E11-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 11,
+          "start": 57.8,
+          "end": 87.8,
+          "start_beat": "B051",
+          "end_beat": "B071"
+        }
+      ],
+      "title": "Ep 11 window 1",
+      "hook": "Stop! Those are my mother's medicines!",
+      "cliffhanger": "What is it, soldier? Going to strike a gentleman in front of his wife?",
+      "why": "rules: hook 0.85, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6418,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6518,
+      "rank": 31,
+      "duration": 30.0,
+      "episodes": [
+        11
+      ],
+      "segments_ts": [
+        [
+          11,
+          "00:57.80",
+          "01:27.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E30-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 30,
+          "start": 88.5,
+          "end": 125.1,
+          "start_beat": "B044",
+          "end_beat": "B060"
+        }
+      ],
+      "title": "Ep 30 window 1",
+      "hook": "Witchcraft is a capital charge.",
+      "cliffhanger": "She goes before the magistrate tomorrow.",
+      "why": "rules: hook 0.75, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6492,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6492,
+      "rank": 32,
+      "duration": 36.6,
+      "episodes": [
+        30
+      ],
+      "segments_ts": [
+        [
+          30,
+          "01:28.50",
+          "02:05.10"
+        ]
+      ]
+    },
+    {
+      "id": "R-E16-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 16,
+          "start": 6.2,
+          "end": 46.2,
+          "start_beat": "B006",
+          "end_beat": "B037"
+        }
+      ],
+      "title": "Ep 16 window 2",
+      "hook": "Low-angle medium shot of the Thug with Cap gripping his weapon with both hands and roaring into the night air.",
+      "cliffhanger": "Who sent you?",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6324,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6424,
+      "rank": 33,
+      "duration": 40.0,
+      "episodes": [
+        16
+      ],
+      "segments_ts": [
+        [
+          16,
+          "00:06.20",
+          "00:46.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E34-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 34,
+          "start": 87.0,
+          "end": 126.8,
+          "start_beat": "B050",
+          "end_beat": "B078"
+        }
+      ],
+      "title": "Ep 34 window 1",
+      "hook": "The Judge repeatedly hammers his gavel down onto the desk, roaring over her.",
+      "cliffhanger": "You admit you administered them?",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6403,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6403,
+      "rank": 34,
+      "duration": 39.8,
+      "episodes": [
+        34
+      ],
+      "segments_ts": [
+        [
+          34,
+          "01:27.00",
+          "02:06.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E11-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 11,
+          "start": 22.0,
+          "end": 60.4,
+          "start_beat": "B021",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Ep 11 window 2",
+      "hook": "You never even entered the cottage!",
+      "cliffhanger": "The Constable begins violently overturning crates and dumping contents across the floor.",
+      "why": "rules: hook 0.95, cliff 0.25, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6292,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6392,
+      "rank": 35,
+      "duration": 38.4,
+      "episodes": [
+        11
+      ],
+      "segments_ts": [
+        [
+          11,
+          "00:22.00",
+          "01:00.40"
+        ]
+      ]
+    },
+    {
+      "id": "R-E30-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 30,
+          "start": 8.6,
+          "end": 43.8,
+          "start_beat": "B006",
+          "end_beat": "B020"
+        }
+      ],
+      "title": "Ep 30 window 2",
+      "hook": "You have a rat in your cellar, Rupert. And the servants are beginning to smell it.",
+      "cliffhanger": "What are you suggesting?",
+      "why": "rules: hook 0.75, cliff 0.45, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6384,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6384,
+      "rank": 36,
+      "duration": 35.2,
+      "episodes": [
+        30
+      ],
+      "segments_ts": [
+        [
+          30,
+          "00:08.60",
+          "00:43.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E25-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 25,
+          "start": 18.6,
+          "end": 63.5,
+          "start_beat": "B013",
+          "end_beat": "B038"
+        }
+      ],
+      "title": "Ep 25 window 1",
+      "hook": "Alexander's gloved fingers pull back the torn fabric of her cloak and sleeve, revealing a raw, bloody welt slashing across her bare shoulder.",
+      "cliffhanger": "Tight close-up of Alexander's face freezing in shock, his eyes widening as the revelation hits him.",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6241,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6341,
+      "rank": 37,
+      "duration": 44.9,
+      "episodes": [
+        25
+      ],
+      "segments_ts": [
+        [
+          25,
+          "00:18.60",
+          "01:03.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E44-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 44,
+          "start": 8.6,
+          "end": 49.0,
+          "start_beat": "B005",
+          "end_beat": "B034"
+        }
+      ],
+      "title": "Ep 44 window 2",
+      "hook": "You have no authority!",
+      "cliffhanger": "You don't remember?",
+      "why": "rules: hook 0.80, cliff 0.45, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.633,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.633,
+      "rank": 38,
+      "duration": 40.4,
+      "episodes": [
+        44
+      ],
+      "segments_ts": [
+        [
+          44,
+          "00:08.60",
+          "00:49.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E46-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 46,
+          "start": 20.5,
+          "end": 62.8,
+          "start_beat": "B013",
+          "end_beat": "B033"
+        }
+      ],
+      "title": "Ep 46 window 2",
+      "hook": "You married this woman as a nameless beggar...",
+      "cliffhanger": "I didn't ask this church for permission to survive, Father.",
+      "why": "rules: hook 1.00, cliff 0.20, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6327,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6327,
+      "rank": 39,
+      "duration": 42.3,
+      "episodes": [
+        46
+      ],
+      "segments_ts": [
+        [
+          46,
+          "00:20.50",
+          "01:02.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E01-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 1,
+          "start": 39.0,
+          "end": 72.4,
+          "start_beat": "B026",
+          "end_beat": "B046"
+        }
+      ],
+      "title": "Ep 1 window 2",
+      "hook": "Because he is marrying me.",
+      "cliffhanger": "And you knew?",
+      "why": "rules: hook 0.75, cliff 0.50, standalone 0.50 (opens on a dependent line; starts on an answer to an unseen question)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6005,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6305,
+      "rank": 40,
+      "duration": 33.4,
+      "episodes": [
+        1
+      ],
+      "segments_ts": [
+        [
+          1,
+          "00:39.00",
+          "01:12.40"
+        ]
+      ]
+    },
+    {
+      "id": "R-E12-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 12,
+          "start": 13.9,
+          "end": 46.6,
+          "start_beat": "B010",
+          "end_beat": "B031"
+        }
+      ],
+      "title": "Ep 12 window 1",
+      "hook": "The proof is in his coat, Juliana. A valuable pocket watch doesn't just walk into a beggar's pocket.",
+      "cliffhanger": "What do you want?",
+      "why": "rules: hook 0.65, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6194,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6294,
+      "rank": 41,
+      "duration": 32.7,
+      "episodes": [
+        12
+      ],
+      "segments_ts": [
+        [
+          12,
+          "00:13.90",
+          "00:46.60"
+        ]
+      ]
+    },
+    {
+      "id": "R-E25-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 25,
+          "start": 137.2,
+          "end": 168.0,
+          "start_beat": "B080",
+          "end_beat": "B093"
+        }
+      ],
+      "title": "Ep 25 window 2",
+      "hook": "Worry? They struck you. They could have killed you.",
+      "cliffhanger": "Alexander turns, falling into step beside Juliana. Together, side by side, they begin their quiet walk down the darkening forest path into the twilight.",
+      "why": "rules: hook 0.65, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6192,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6292,
+      "rank": 42,
+      "duration": 30.8,
+      "episodes": [
+        25
+      ],
+      "segments_ts": [
+        [
+          25,
+          "02:17.20",
+          "02:48.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E24-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 24,
+          "start": 32.3,
+          "end": 72.8,
+          "start_beat": "B023",
+          "end_beat": "B055"
+        }
+      ],
+      "title": "Ep 24 window 2",
+      "hook": "The noblewoman suddenly rears back her riding crop and strikes Juliana violently across the torso.",
+      "cliffhanger": "Do you want the same punishment?",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6172,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6272,
+      "rank": 43,
+      "duration": 40.5,
+      "episodes": [
+        24
+      ],
+      "segments_ts": [
+        [
+          24,
+          "00:32.30",
+          "01:12.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E31-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 31,
+          "start": 77.6,
+          "end": 124.0,
+          "start_beat": "B045",
+          "end_beat": "B066"
+        }
+      ],
+      "title": "Ep 31 window 1",
+      "hook": "You call that marriage?",
+      "cliffhanger": "Catherine's smug expression freezes, her eyes widening in momentary shock and fury as the blow lands squarely.",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6237,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6237,
+      "rank": 44,
+      "duration": 46.4,
+      "episodes": [
+        31
+      ],
+      "segments_ts": [
+        [
+          31,
+          "01:17.60",
+          "02:04.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E32-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 32,
+          "start": 33.0,
+          "end": 80.0,
+          "start_beat": "B026",
+          "end_beat": "B056"
+        }
+      ],
+      "title": "Ep 32 window 2",
+      "hook": "...you cannot destroy what my mother taught me.",
+      "cliffhanger": "Your soldier?",
+      "why": "rules: hook 0.85, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6228,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6228,
+      "rank": 45,
+      "duration": 47.0,
+      "episodes": [
+        32
+      ],
+      "segments_ts": [
+        [
+          32,
+          "00:33.00",
+          "01:20.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E37-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 37,
+          "start": 133.8,
+          "end": 156.47,
+          "start_beat": "B073",
+          "end_beat": "B078"
+        }
+      ],
+      "title": "Ep 37 window 1",
+      "hook": "Instead she married a nobody, played healer to peasants, challenged people above her. And now the whole county will watch her pay for it.",
+      "cliffhanger": "A deep, ominous cello rumble builds alongside the crackle of the fireplace into an unresolved, tension-filled cliffhanger sting before fading out.",
+      "why": "rules: hook 0.80, cliff 0.70, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6216,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6216,
+      "rank": 46,
+      "duration": 22.67,
+      "episodes": [
+        37
+      ],
+      "segments_ts": [
+        [
+          37,
+          "02:13.80",
+          "02:36.47"
+        ]
+      ]
+    },
+    {
+      "id": "R-E26-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 26,
+          "start": 55.8,
+          "end": 92.3,
+          "start_beat": "B025",
+          "end_beat": "B035"
+        }
+      ],
+      "title": "Ep 26 window 1",
+      "hook": "Rupert and Catherine want me dead. They are poisoning me in my own bed, aren't they?",
+      "cliffhanger": "A sharp, stunned gasp.",
+      "why": "rules: hook 0.80, cliff 0.40, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6193,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6193,
+      "rank": 47,
+      "duration": 36.5,
+      "episodes": [
+        26
+      ],
+      "segments_ts": [
+        [
+          26,
+          "00:55.80",
+          "01:32.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E33-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 33,
+          "start": 68.8,
+          "end": 113.8,
+          "start_beat": "B042",
+          "end_beat": "B067"
+        }
+      ],
+      "title": "Ep 33 window 1",
+      "hook": "Please, my Lord... he is only seven!",
+      "cliffhanger": "Praying... or chanting?",
+      "why": "rules: hook 0.70, cliff 0.45, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6185,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6185,
+      "rank": 48,
+      "duration": 45.0,
+      "episodes": [
+        33
+      ],
+      "segments_ts": [
+        [
+          33,
+          "01:08.80",
+          "01:53.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E12-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 12,
+          "start": 41.8,
+          "end": 85.0,
+          "start_beat": "B029",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Ep 12 window 2",
+      "hook": "What do you want?",
+      "cliffhanger": "Juliana turns her head sharply back toward Clarissa, her expression hardening with fierce resolution.",
+      "why": "rules: hook 0.60, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6078,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6178,
+      "rank": 49,
+      "duration": 43.2,
+      "episodes": [
+        12
+      ],
+      "segments_ts": [
+        [
+          12,
+          "00:41.80",
+          "01:25.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E45-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 45,
+          "start": 53.8,
+          "end": 74.5,
+          "start_beat": "B039",
+          "end_beat": "B048"
+        }
+      ],
+      "title": "Ep 45 window 2",
+      "hook": "You poisoned my mother. You tortured my wife.",
+      "cliffhanger": "Before the Crown and before God...",
+      "why": "rules: hook 1.00, cliff 0.40, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6178,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6178,
+      "rank": 50,
+      "duration": 20.7,
+      "episodes": [
+        45
+      ],
+      "segments_ts": [
+        [
+          45,
+          "00:53.80",
+          "01:14.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E29-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 29,
+          "start": 37.4,
+          "end": 74.3,
+          "start_beat": "B021",
+          "end_beat": "B045"
+        }
+      ],
+      "title": "Ep 29 window 1",
+      "hook": "You know that is a lie!",
+      "cliffhanger": "Your scarred soldier?",
+      "why": "rules: hook 0.80, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6175,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6175,
+      "rank": 51,
+      "duration": 36.9,
+      "episodes": [
+        29
+      ],
+      "segments_ts": [
+        [
+          29,
+          "00:37.40",
+          "01:14.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E50-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 50,
+          "start": 30.5,
+          "end": 80.0,
+          "start_beat": "B016",
+          "end_beat": "B038"
+        }
+      ],
+      "title": "Ep 50 window 1",
+      "hook": "Absolution is free. Discretion has a price.",
+      "cliffhanger": "Sharp, terrified gasp catching in Agnes's throat.",
+      "why": "rules: hook 0.60, cliff 0.70, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.616,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.616,
+      "rank": 52,
+      "duration": 49.5,
+      "episodes": [
+        50
+      ],
+      "segments_ts": [
+        [
+          50,
+          "00:30.50",
+          "01:20.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E20-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 20,
+          "start": 34.1,
+          "end": 66.8,
+          "start_beat": "B023",
+          "end_beat": "B035"
+        }
+      ],
+      "title": "Ep 20 window 2",
+      "hook": "Close-up side profile of Catherine bringing the teacup to her lips, savoring his words with chilling detachment.",
+      "cliffhanger": "The barn door opens, revealing daylight outside. SEAMUS, an older weathered villager in a waistcoat, carries a wooden bucket inside, his expression etched with deep sorrow and concern.",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6029,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6129,
+      "rank": 53,
+      "duration": 32.7,
+      "episodes": [
+        20
+      ],
+      "segments_ts": [
+        [
+          20,
+          "00:34.10",
+          "01:06.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E43-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 43,
+          "start": 10.3,
+          "end": 50.8,
+          "start_beat": "B008",
+          "end_beat": "B040"
+        }
+      ],
+      "title": "Ep 43 window 2",
+      "hook": "I said arrest him!",
+      "cliffhanger": "Frontal medium shot of the Crown Official turning a page as the congregation listens in breathless silence.",
+      "why": "rules: hook 0.85, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.61,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.61,
+      "rank": 54,
+      "duration": 40.5,
+      "episodes": [
+        43
+      ],
+      "segments_ts": [
+        [
+          43,
+          "00:10.30",
+          "00:50.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E33-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 33,
+          "start": 36.5,
+          "end": 68.8,
+          "start_beat": "B024",
+          "end_beat": "B039"
+        }
+      ],
+      "title": "Ep 33 window 2",
+      "hook": "Did she use her mother's book?",
+      "cliffhanger": "One word from me, and the county gaol will take him before sunrise.",
+      "why": "rules: hook 0.75, cliff 0.35, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6018,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6018,
+      "rank": 55,
+      "duration": 32.3,
+      "episodes": [
+        33
+      ],
+      "segments_ts": [
+        [
+          33,
+          "00:36.50",
+          "01:08.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E28-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 28,
+          "start": 8.2,
+          "end": 53.9,
+          "start_beat": "B009",
+          "end_beat": "B040"
+        }
+      ],
+      "title": "Ep 28 window 2",
+      "hook": "...a secret medicine in her hand.",
+      "cliffhanger": "You see?",
+      "why": "rules: hook 0.75, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.6011,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.6011,
+      "rank": 56,
+      "duration": 45.7,
+      "episodes": [
+        28
+      ],
+      "segments_ts": [
+        [
+          28,
+          "00:08.20",
+          "00:53.90"
+        ]
+      ]
+    },
+    {
+      "id": "R-E41-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 41,
+          "start": 26.0,
+          "end": 64.0,
+          "start_beat": "B016",
+          "end_beat": "B035"
+        }
+      ],
+      "title": "Ep 41 window 2",
+      "hook": "There she is.",
+      "cliffhanger": "You needed an entire chapel to feel powerful over one chained woman?",
+      "why": "rules: hook 0.60, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.601,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.601,
+      "rank": 57,
+      "duration": 38.0,
+      "episodes": [
+        41
+      ],
+      "segments_ts": [
+        [
+          41,
+          "00:26.00",
+          "01:04.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E37-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 37,
+          "start": 23.2,
+          "end": 58.5,
+          "start_beat": "B013",
+          "end_beat": "B031"
+        }
+      ],
+      "title": "Ep 37 window 2",
+      "hook": "Juliana's execution comes after the wedding.",
+      "cliffhanger": "What?",
+      "why": "rules: hook 0.90, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5994,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5994,
+      "rank": 58,
+      "duration": 35.3,
+      "episodes": [
+        37
+      ],
+      "segments_ts": [
+        [
+          37,
+          "00:23.20",
+          "00:58.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E22-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 22,
+          "start": 91.3,
+          "end": 128.8,
+          "start_beat": "B055",
+          "end_beat": "B079"
+        }
+      ],
+      "title": "Ep 22 window 1",
+      "hook": "Lady Juliana stops in her tracks and gazes upward in awe at the soaring gilded ceilings and aristocratic crest.",
+      "cliffhanger": "Who has been treating you?",
+      "why": "rules: hook 0.70, cliff 0.60, standalone 0.60 (opens on a dependent line; spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5889,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5989,
+      "rank": 59,
+      "duration": 37.5,
+      "episodes": [
+        22
+      ],
+      "segments_ts": [
+        [
+          22,
+          "01:31.30",
+          "02:08.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E31-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 31,
+          "start": 110.0,
+          "end": 155.2,
+          "start_beat": "B061",
+          "end_beat": "B085"
+        }
+      ],
+      "title": "Ep 31 window 2",
+      "hook": "[scoffs] Peasants? People?",
+      "cliffhanger": "Low-angle medium shot. Catherine lowers the charred book and suddenly swings the glowing orange iron tip straight up toward Juliana's face.",
+      "why": "rules: hook 0.75, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5871,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5871,
+      "rank": 60,
+      "duration": 45.2,
+      "episodes": [
+        31
+      ],
+      "segments_ts": [
+        [
+          31,
+          "01:50.00",
+          "02:35.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E19-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 19,
+          "start": 76.2,
+          "end": 106.5,
+          "start_beat": "B042",
+          "end_beat": "B057"
+        }
+      ],
+      "title": "Ep 19 window 1",
+      "hook": "My mother is a prisoner in her own house.",
+      "cliffhanger": "I don't know what we will do tomorrow.",
+      "why": "rules: hook 0.80, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5766,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5866,
+      "rank": 61,
+      "duration": 30.3,
+      "episodes": [
+        19
+      ],
+      "segments_ts": [
+        [
+          19,
+          "01:16.20",
+          "01:46.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E18-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 18,
+          "start": 157.8,
+          "end": 186.5,
+          "start_beat": "B073",
+          "end_beat": "B078"
+        }
+      ],
+      "title": "Ep 18 window 1",
+      "hook": "Someone wanted us out.",
+      "cliffhanger": "What are you going to do?",
+      "why": "rules: hook 0.60, cliff 0.75, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.575,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.585,
+      "rank": 62,
+      "duration": 28.7,
+      "episodes": [
+        18
+      ],
+      "segments_ts": [
+        [
+          18,
+          "02:37.80",
+          "03:06.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E14-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 14,
+          "start": 0.0,
+          "end": 25.5,
+          "start_beat": "B001",
+          "end_beat": "B016"
+        }
+      ],
+      "title": "Ep 14 window 1",
+      "hook": "Juliana's blood-streaked, mud-caked hand slowly uncurls amidst the thorns, revealing the ornate emerald signet ring resting in her palm.",
+      "cliffhanger": "What have they done to you?",
+      "why": "rules: hook 1.00, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5735,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5835,
+      "rank": 63,
+      "duration": 25.5,
+      "episodes": [
+        14
+      ],
+      "segments_ts": [
+        [
+          14,
+          "00:00.00",
+          "00:25.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E29-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 29,
+          "start": 85.5,
+          "end": 115.5,
+          "start_beat": "B053",
+          "end_beat": "B072"
+        }
+      ],
+      "title": "Ep 29 window 2",
+      "hook": "Please!",
+      "cliffhanger": "Front medium shot of Juliana slowly rising to her feet, crossing her arms firmly across her chest as her tears stop and her expression hardens into steely resolve.",
+      "why": "rules: hook 0.70, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5791,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5791,
+      "rank": 64,
+      "duration": 30.0,
+      "episodes": [
+        29
+      ],
+      "segments_ts": [
+        [
+          29,
+          "01:25.50",
+          "01:55.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E23-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 23,
+          "start": 81.5,
+          "end": 131.5,
+          "start_beat": "B042",
+          "end_beat": "B065"
+        }
+      ],
+      "title": "Ep 23 window 1",
+      "hook": "Poison?",
+      "cliffhanger": "Quick cut to Juliana looking back toward the bed and then toward the door, trapped with an unfinished cure.",
+      "why": "rules: hook 0.75, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.568,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.578,
+      "rank": 65,
+      "duration": 50.0,
+      "episodes": [
+        23
+      ],
+      "segments_ts": [
+        [
+          23,
+          "01:21.50",
+          "02:11.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E05-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 11.5,
+          "end": 48.8,
+          "start_beat": "B008",
+          "end_beat": "B026"
+        }
+      ],
+      "title": "Ep 5 window 2",
+      "hook": "The vows are spoken, Father. I am his wife now.",
+      "cliffhanger": "And the ledger...",
+      "why": "rules: hook 0.65, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5475,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5775,
+      "rank": 66,
+      "duration": 37.3,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "00:11.50",
+          "00:48.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E18-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 18,
+          "start": 5.8,
+          "end": 48.8,
+          "start_beat": "B005",
+          "end_beat": "B027"
+        }
+      ],
+      "title": "Ep 18 window 2",
+      "hook": "Alexander!",
+      "cliffhanger": "Loud wooden groaning and thunderous crash of burning rafters falling behind them.",
+      "why": "rules: hook 0.70, cliff 0.40, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5622,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5722,
+      "rank": 67,
+      "duration": 43.0,
+      "episodes": [
+        18
+      ],
+      "segments_ts": [
+        [
+          18,
+          "00:05.80",
+          "00:48.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E22-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 22,
+          "start": 21.2,
+          "end": 69.8,
+          "start_beat": "B012",
+          "end_beat": "B042"
+        }
+      ],
+      "title": "Ep 22 window 2",
+      "hook": "I saved Toby. I can save her.",
+      "cliffhanger": "And can you keep your eyes and ears where they belong?",
+      "why": "rules: hook 0.60, cliff 0.50, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5608,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5708,
+      "rank": 68,
+      "duration": 48.6,
+      "episodes": [
+        22
+      ],
+      "segments_ts": [
+        [
+          22,
+          "00:21.20",
+          "01:09.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E34-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 34,
+          "start": 35.1,
+          "end": 75.8,
+          "start_beat": "B017",
+          "end_beat": "B042"
+        }
+      ],
+      "title": "Ep 34 window 2",
+      "hook": "The Judge furiously raises his wooden gavel and strikes the sound block with sharp force.",
+      "cliffhanger": "And did she speak words you could not understand?",
+      "why": "rules: hook 0.70, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5707,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5707,
+      "rank": 69,
+      "duration": 40.7,
+      "episodes": [
+        34
+      ],
+      "segments_ts": [
+        [
+          34,
+          "00:35.10",
+          "01:15.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E39-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 39,
+          "start": 65.4,
+          "end": 98.41,
+          "start_beat": "B041",
+          "end_beat": "B057"
+        }
+      ],
+      "title": "Ep 39 window 1",
+      "hook": "Today, he comes home.",
+      "cliffhanger": "And I am bringing my wife home.",
+      "why": "rules: hook 0.60, cliff 0.50, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5688,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5688,
+      "rank": 70,
+      "duration": 33.01,
+      "episodes": [
+        39
+      ],
+      "segments_ts": [
+        [
+          39,
+          "01:05.40",
+          "01:38.41"
+        ]
+      ]
+    },
+    {
+      "id": "R-E47-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 47,
+          "start": 95.5,
+          "end": 131.5,
+          "start_beat": "B050",
+          "end_beat": "B068"
+        }
+      ],
+      "title": "Ep 47 window 2",
+      "hook": "You want me? As a guest?",
+      "cliffhanger": "Extreme close-up on Catherine's trembling hands as she reaches out, taking the coarse apron and clattering iron keys, pressing them desperately against her chest.",
+      "why": "rules: hook 0.70, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5682,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5682,
+      "rank": 71,
+      "duration": 36.0,
+      "episodes": [
+        47
+      ],
+      "segments_ts": [
+        [
+          47,
+          "01:35.50",
+          "02:11.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E40-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 40,
+          "start": 74.5,
+          "end": 110.08,
+          "start_beat": "B037",
+          "end_beat": "B049"
+        }
+      ],
+      "title": "Ep 40 window 1",
+      "hook": "And its witch will be dead.",
+      "cliffhanger": "Tight two-shot profile of Catherine and Rupert clasping hands intimately, gazing into each other's eyes with shared aristocratic vanity.",
+      "why": "rules: hook 0.90, cliff 0.30, standalone 0.60 (opens on a dependent line; spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5675,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5675,
+      "rank": 72,
+      "duration": 35.58,
+      "episodes": [
+        40
+      ],
+      "segments_ts": [
+        [
+          40,
+          "01:14.50",
+          "01:50.08"
+        ]
+      ]
+    },
+    {
+      "id": "R-E13-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 13,
+          "start": 71.2,
+          "end": 107.0,
+          "start_beat": "B047",
+          "end_beat": "B066"
+        }
+      ],
+      "title": "Ep 13 window 2",
+      "hook": "Please... enough!",
+      "cliffhanger": "Her blood-smeared index finger brushes against a solid metallic object half-buried in the frozen dirt beneath a thorny branch.",
+      "why": "rules: hook 0.70, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5525,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5625,
+      "rank": 73,
+      "duration": 35.8,
+      "episodes": [
+        13
+      ],
+      "segments_ts": [
+        [
+          13,
+          "01:11.20",
+          "01:47.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E08-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 8,
+          "start": 39.6,
+          "end": 75.6,
+          "start_beat": "B034",
+          "end_beat": "B061"
+        }
+      ],
+      "title": "Ep 8 window 1",
+      "hook": "You prefer looking like a forest hermit?",
+      "cliffhanger": "Wide shot framing the warm silhouette of the two companions sitting peacefully beside the blazing stone hearth.",
+      "why": "rules: hook 0.40, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5318,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5618,
+      "rank": 74,
+      "duration": 36.0,
+      "episodes": [
+        8
+      ],
+      "segments_ts": [
+        [
+          8,
+          "00:39.60",
+          "01:15.60"
+        ]
+      ]
+    },
+    {
+      "id": "R-E09-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 9,
+          "start": 40.8,
+          "end": 77.5,
+          "start_beat": "B032",
+          "end_beat": "B056"
+        }
+      ],
+      "title": "Ep 9 window 1",
+      "hook": "Please save him.",
+      "cliffhanger": "I will tell the village what you did. They will never forget you.",
+      "why": "rules: hook 0.60, cliff 0.35, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.523,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.553,
+      "rank": 75,
+      "duration": 36.7,
+      "episodes": [
+        9
+      ],
+      "segments_ts": [
+        [
+          9,
+          "00:40.80",
+          "01:17.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E10-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 10,
+          "start": 14.2,
+          "end": 54.0,
+          "start_beat": "B014",
+          "end_beat": "B039"
+        }
+      ],
+      "title": "Ep 10 window 1",
+      "hook": "Sit down.",
+      "cliffhanger": "Does it hurt?",
+      "why": "rules: hook 0.60, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5228,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5528,
+      "rank": 76,
+      "duration": 39.8,
+      "episodes": [
+        10
+      ],
+      "segments_ts": [
+        [
+          10,
+          "00:14.20",
+          "00:54.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E27-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 27,
+          "start": 122.8,
+          "end": 145.2,
+          "start_beat": "B078",
+          "end_beat": "B089"
+        }
+      ],
+      "title": "Ep 27 window 2",
+      "hook": "She admits she has been giving the Duchess poison in secret!",
+      "cliffhanger": "Take her.",
+      "why": "rules: hook 0.90, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5518,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5518,
+      "rank": 77,
+      "duration": 22.4,
+      "episodes": [
+        27
+      ],
+      "segments_ts": [
+        [
+          27,
+          "02:02.80",
+          "02:25.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E04-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 4,
+          "start": 3.2,
+          "end": 36.0,
+          "start_beat": "B004",
+          "end_beat": "B028"
+        }
+      ],
+      "title": "Ep 4 window 2",
+      "hook": "Look at him.",
+      "cliffhanger": "And what do you see?",
+      "why": "rules: hook 0.60, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5206,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5506,
+      "rank": 78,
+      "duration": 32.8,
+      "episodes": [
+        4
+      ],
+      "segments_ts": [
+        [
+          4,
+          "00:03.20",
+          "00:36.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E21-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 21,
+          "start": 11.0,
+          "end": 42.8,
+          "start_beat": "B009",
+          "end_beat": "B026"
+        }
+      ],
+      "title": "Ep 21 window 1",
+      "hook": "My little brother Toby... his chest is burning! He cannot breathe!",
+      "cliffhanger": "Lady Juliana immediately reaches down and pulls Prudence firmly back to her feet, then turns to snatch her heavy leather-bound herbal ledger from the wooden workbench.",
+      "why": "rules: hook 0.75, cliff 0.25, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5286,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5386,
+      "rank": 79,
+      "duration": 31.8,
+      "episodes": [
+        21
+      ],
+      "segments_ts": [
+        [
+          21,
+          "00:11.00",
+          "00:42.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E40-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 40,
+          "start": 12.2,
+          "end": 45.2,
+          "start_beat": "B006",
+          "end_beat": "B019"
+        }
+      ],
+      "title": "Ep 40 window 2",
+      "hook": "Medium two-shot tracking slightly as Lord and Lady Harrington pause arm-in-arm, taking in the gathering crowd of high society.",
+      "cliffhanger": "Of the wedding?",
+      "why": "rules: hook 0.70, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5334,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5334,
+      "rank": 80,
+      "duration": 33.0,
+      "episodes": [
+        40
+      ],
+      "segments_ts": [
+        [
+          40,
+          "00:12.20",
+          "00:45.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E09-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 9,
+          "start": 77.5,
+          "end": 112.0,
+          "start_beat": "B060",
+          "end_beat": "B087"
+        }
+      ],
+      "title": "Ep 9 window 2",
+      "hook": "A child's life matters more than gossip.",
+      "cliffhanger": "Side profile shot of the Blond Nobleman seated alone before the roaring fire, staring blankly into the flames in creeping paranoia.",
+      "why": "rules: hook 0.60, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5025,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5325,
+      "rank": 81,
+      "duration": 34.5,
+      "episodes": [
+        9
+      ],
+      "segments_ts": [
+        [
+          9,
+          "01:17.50",
+          "01:52.00"
+        ]
+      ]
+    },
+    {
+      "id": "R-E21-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 21,
+          "start": 48.8,
+          "end": 101.2,
+          "start_beat": "B034",
+          "end_beat": "B069"
+        }
+      ],
+      "title": "Ep 21 window 2",
+      "hook": "Prudence, fetch hot water immediately!",
+      "cliffhanger": "Lady Juliana turns sharply, her eyes widening with sudden recognition.",
+      "why": "rules: hook 0.70, cliff 0.50, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.518,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.528,
+      "rank": 82,
+      "duration": 52.4,
+      "episodes": [
+        21
+      ],
+      "segments_ts": [
+        [
+          21,
+          "00:48.80",
+          "01:41.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E14-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 14,
+          "start": 29.5,
+          "end": 87.63,
+          "start_beat": "B020",
+          "end_beat": "B049"
+        }
+      ],
+      "title": "Ep 14 window 2",
+      "hook": "Take me home.",
+      "cliffhanger": "Ominous, resonating low bass boom swelling into sudden silence as the screen cuts to black.",
+      "why": "rules: hook 0.60, cliff 0.70, standalone 0.70 (spans 3 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5116,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5216,
+      "rank": 83,
+      "duration": 58.13,
+      "episodes": [
+        14
+      ],
+      "segments_ts": [
+        [
+          14,
+          "00:29.50",
+          "01:27.63"
+        ]
+      ]
+    },
+    {
+      "id": "R-E23-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 23,
+          "start": 61.8,
+          "end": 97.5,
+          "start_beat": "B031",
+          "end_beat": "B049"
+        }
+      ],
+      "title": "Ep 23 window 2",
+      "hook": "Weakness. Dry mouth. The discoloration beneath the nails. The slow wasting.",
+      "cliffhanger": "Can you save her?",
+      "why": "rules: hook 0.50, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5042,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5142,
+      "rank": 84,
+      "duration": 35.7,
+      "episodes": [
+        23
+      ],
+      "segments_ts": [
+        [
+          23,
+          "01:01.80",
+          "01:37.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E19-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 19,
+          "start": 4.5,
+          "end": 41.5,
+          "start_beat": "B004",
+          "end_beat": "B024"
+        }
+      ],
+      "title": "Ep 19 window 2",
+      "hook": "My mother's book almost burned with it.",
+      "cliffhanger": "Juliana turns her back on the ruins. Wide tracking shot from behind as Alexander and Juliana walk side by side down the stone path, leaving the smoldering ash behind as the scene fades into black.",
+      "why": "rules: hook 0.60, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.499,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.509,
+      "rank": 85,
+      "duration": 37.0,
+      "episodes": [
+        19
+      ],
+      "segments_ts": [
+        [
+          19,
+          "00:04.50",
+          "00:41.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E07-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 7,
+          "start": 32.8,
+          "end": 65.2,
+          "start_beat": "B014",
+          "end_beat": "B029"
+        }
+      ],
+      "title": "Ep 7 window 2",
+      "hook": "Home? Look at your hands, Juliana.",
+      "cliffhanger": "You have no authority here. Leave.",
+      "why": "rules: hook 0.60, cliff 0.20, standalone 0.75 (starts on an answer to an unseen question)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4759,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5059,
+      "rank": 86,
+      "duration": 32.4,
+      "episodes": [
+        7
+      ],
+      "segments_ts": [
+        [
+          7,
+          "00:32.80",
+          "01:05.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E49-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 49,
+          "start": 15.5,
+          "end": 62.8,
+          "start_beat": "B009",
+          "end_beat": "B026"
+        }
+      ],
+      "title": "Ep 49 window 1",
+      "hook": "Good. That's what I pay her for.",
+      "cliffhanger": "Medium close-up on Father Thomas as he turns his head slightly, scanning the dusty shadowed recesses of the abandoned room.",
+      "why": "rules: hook 0.60, cliff 0.25, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.5025,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.5025,
+      "rank": 87,
+      "duration": 47.3,
+      "episodes": [
+        49
+      ],
+      "segments_ts": [
+        [
+          49,
+          "00:15.50",
+          "01:02.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E06-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 6,
+          "start": 11.1,
+          "end": 58.2,
+          "start_beat": "B011",
+          "end_beat": "B049"
+        }
+      ],
+      "title": "Ep 6 window 2",
+      "hook": "Juliana looks upward into the canopy, gathering herself with a faint nod.",
+      "cliffhanger": "Medium close-up of Juliana turning back toward him, a soft, genuine smile illuminating her face.",
+      "why": "rules: hook 0.70, cliff 0.25, standalone 0.60 (opens on a dependent line; spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4659,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4959,
+      "rank": 88,
+      "duration": 47.1,
+      "episodes": [
+        6
+      ],
+      "segments_ts": [
+        [
+          6,
+          "00:11.10",
+          "00:58.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E08-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 8,
+          "start": 4.9,
+          "end": 42.3,
+          "start_beat": "B006",
+          "end_beat": "B034"
+        }
+      ],
+      "title": "Ep 8 window 2",
+      "hook": "Mother spent years writing this.",
+      "cliffhanger": "You prefer looking like a forest hermit?",
+      "why": "rules: hook 0.45, cliff 0.30, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4586,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4886,
+      "rank": 89,
+      "duration": 37.4,
+      "episodes": [
+        8
+      ],
+      "segments_ts": [
+        [
+          8,
+          "00:04.90",
+          "00:42.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E48-1",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 48,
+          "start": 34.0,
+          "end": 64.3,
+          "start_beat": "B022",
+          "end_beat": "B035"
+        }
+      ],
+      "title": "Ep 48 window 1",
+      "hook": "Everyone in that chapel saw me humiliated today.",
+      "cliffhanger": "Then no one sees him.",
+      "why": "rules: hook 0.60, cliff 0.20, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4772,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4772,
+      "rank": 90,
+      "duration": 30.3,
+      "episodes": [
+        48
+      ],
+      "segments_ts": [
+        [
+          48,
+          "00:34.00",
+          "01:04.30"
+        ]
+      ]
+    },
+    {
+      "id": "R-E49-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 49,
+          "start": 118.0,
+          "end": 139.8,
+          "start_beat": "B049",
+          "end_beat": "B055"
+        }
+      ],
+      "title": "Ep 49 window 2",
+      "hook": "Careful men still hang, my lady, when the crime is treason against a Duke the King himself just restored.",
+      "cliffhanger": "Father Thomas slowly raises his right hand, palm turned upward in invitation and pact.",
+      "why": "rules: hook 0.50, cliff 0.55, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4768,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4768,
+      "rank": 91,
+      "duration": 21.8,
+      "episodes": [
+        49
+      ],
+      "segments_ts": [
+        [
+          49,
+          "01:58.00",
+          "02:19.80"
+        ]
+      ]
+    },
+    {
+      "id": "R-E48-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 48,
+          "start": 2.2,
+          "end": 33.9,
+          "start_beat": "B002",
+          "end_beat": "B019"
+        }
+      ],
+      "title": "Ep 48 window 2",
+      "hook": "Two words, and that healer's crown rolls right back into the gutter where it belongs.",
+      "cliffhanger": "You sent for me, my lady?",
+      "why": "rules: hook 0.50, cliff 0.30, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4571,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4571,
+      "rank": 92,
+      "duration": 31.7,
+      "episodes": [
+        48
+      ],
+      "segments_ts": [
+        [
+          48,
+          "00:02.20",
+          "00:33.90"
+        ]
+      ]
+    },
+    {
+      "id": "R-E39-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 39,
+          "start": 29.6,
+          "end": 67.2,
+          "start_beat": "B018",
+          "end_beat": "B038"
+        }
+      ],
+      "title": "Ep 39 window 2",
+      "hook": "Stop!",
+      "cliffhanger": "Medium shot framed in the mirror of Alexander now handsomely groomed, his trimmed beard framing his fierce, scarred features.",
+      "why": "rules: hook 0.70, cliff 0.00, standalone 0.85 (spans 2 scenes)",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.421,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.421,
+      "rank": 93,
+      "duration": 37.6,
+      "episodes": [
+        39
+      ],
+      "segments_ts": [
+        [
+          39,
+          "00:29.60",
+          "01:07.20"
+        ]
+      ]
+    },
+    {
+      "id": "R-E10-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 10,
+          "start": 55.5,
+          "end": 86.5,
+          "start_beat": "B043",
+          "end_beat": "B058"
+        }
+      ],
+      "title": "Ep 10 window 2",
+      "hook": "You are a terrible liar.",
+      "cliffhanger": "Close-up of Alexander's large, rough hands reaching up and gently enveloping Juliana's slender hands, bringing them against his bare chest over his racing heart.",
+      "why": "rules: hook 0.55, cliff 0.00, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.3907,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4207,
+      "rank": 94,
+      "duration": 31.0,
+      "episodes": [
+        10
+      ],
+      "segments_ts": [
+        [
+          10,
+          "00:55.50",
+          "01:26.50"
+        ]
+      ]
+    },
+    {
+      "id": "R-E42-2",
+      "kind": "rules",
+      "segments": [
+        {
+          "ep": 42,
+          "start": 10.5,
+          "end": 33.8,
+          "start_beat": "B002",
+          "end_beat": "B020"
+        }
+      ],
+      "title": "Ep 42 window 2",
+      "hook": "Who are you?",
+      "cliffhanger": "Rupert...",
+      "why": "rules: hook 0.60, cliff 0.10, standalone 1.00",
+      "pattern": "",
+      "hook_beat": "",
+      "cliffhanger_beat": "",
+      "scores": {},
+      "rules_score": 0.4018,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "rules",
+      "final_score": 0.4018,
+      "rank": 95,
+      "duration": 23.3,
+      "episodes": [
+        42
+      ],
+      "segments_ts": [
+        [
+          42,
+          "00:10.50",
+          "00:33.80"
+        ]
+      ]
+    }
+  ],
+  "log": [
+    {
+      "stage": "load",
+      "episodes": 50,
+      "beats": 3727
+    }
+  ]
+}

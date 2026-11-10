@@ -1,0 +1,473 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "meta": {
+    "show": "I Married a Broken Soldier. He was a Duke",
+    "picker": "groq:openai/gpt-oss-20b",
+    "fallback": "",
+    "viewer": null,
+    "playbook_rag": true,
+    "episodes": 8,
+    "beats": 520,
+    "seconds": 241.9,
+    "usage": {
+      "groq:openai/gpt-oss-20b": {
+        "calls": 10,
+        "input_tokens": 25355,
+        "output_tokens": 4702,
+        "cache_hits": 0
+      }
+    },
+    "input": "data\\I Married a Broken Soldier. He was a Duke"
+  },
+  "promos": [
+    {
+      "id": "E41-P1",
+      "kind": "multi-moment",
+      "segments": [
+        {
+          "ep": 41,
+          "start": 1.6,
+          "end": 20.0,
+          "start_beat": "B001",
+          "end_beat": "B012"
+        },
+        {
+          "ep": 41,
+          "start": 80.5,
+          "end": 93.8,
+          "start_beat": "B046",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Ceremony Shattered",
+      "hook": "Catherine raises her hand, demanding silence from the congregation.",
+      "cliffhanger": "The cathedral doors burst open, flames erupting as the entrance explodes.",
+      "why": "Starts with a dramatic command, ends on the explosive breach—instant hook and cliffhanger that pulls viewers in.",
+      "pattern": "Interrupted ceremony",
+      "hook_beat": "B001",
+      "cliffhanger_beat": "B051",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 9.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.7,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "Why Juliana is chained and being paraded.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Interrupted ceremony",
+        "Identity reveal",
+        "Rescue from danger"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.8445,
+      "rank": 1,
+      "duration": 31.7,
+      "episodes": [
+        41
+      ],
+      "segments_ts": [
+        [
+          41,
+          "00:01.60",
+          "00:20.00"
+        ],
+        [
+          41,
+          "01:20.50",
+          "01:33.80"
+        ]
+      ]
+    },
+    {
+      "id": "E27-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 27,
+          "start": 1.1,
+          "end": 46.4,
+          "start_beat": "B001",
+          "end_beat": "B024"
+        }
+      ],
+      "title": "Hidden Crest Reveal",
+      "hook": "The Dowager Duchess grips a ring and gasps, \"This ring…\"",
+      "cliffhanger": "\"What is your husband's name?\"",
+      "why": "A dramatic, immediate hook shows a royal crest in a poor maid’s hand, ending on the Duchess’s desperate question that pulls viewers into the mystery of the Duke’s identity.",
+      "pattern": "Hidden identity hint",
+      "hook_beat": "B001",
+      "cliffhanger_beat": "B024",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 9.0,
+        "standalone": 10.0
+      },
+      "rules_score": 0.35,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Hidden identity hint",
+        "Rescue from danger",
+        "Disowned / stripped of status"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.843,
+      "rank": 2,
+      "duration": 45.3,
+      "episodes": [
+        27
+      ],
+      "segments_ts": [
+        [
+          27,
+          "00:01.10",
+          "00:46.40"
+        ]
+      ]
+    },
+    {
+      "id": "E05-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 18.3,
+          "end": 57.8,
+          "start_beat": "B011",
+          "end_beat": "B031"
+        }
+      ],
+      "title": "Disowned & Dignity",
+      "hook": "You leave as no daughter of mine.",
+      "cliffhanger": "Ledger flung into the rain-soaked courtyard.",
+      "why": "The hook instantly shows Juliana’s loss of status, the cliffhanger leaves her dignity in peril, and the scene alone tells a story of defiance and humiliation that new viewers can grasp immediately.",
+      "pattern": "Disowned / stripped of status",
+      "hook_beat": "B011",
+      "cliffhanger_beat": "B031",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 9.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.275,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Disowned / stripped of status",
+        "Sacrifice for love",
+        "Hidden identity hint"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.8363,
+      "rank": 3,
+      "duration": 39.5,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "00:18.30",
+          "00:57.80"
+        ]
+      ]
+    },
+    {
+      "id": "E12-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 12,
+          "start": 46.6,
+          "end": 69.5,
+          "start_beat": "B033",
+          "end_beat": "B044"
+        }
+      ],
+      "title": "The Emerald Ring Ultimatum",
+      "hook": "My emerald signet ring fell deep into the frozen blackthorn briars…",
+      "cliffhanger": "Fail, or refuse, and your husband hangs from the gallows.",
+      "why": "The hook shows a priceless object in a dangerous setting, instantly grabbing attention. The cliffhanger leaves the viewer hanging on the life‑threatening ultimatum, driving curiosity to watch the full episode.",
+      "pattern": "Hidden identity hint",
+      "hook_beat": "B033",
+      "cliffhanger_beat": "B044",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 9.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.275,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "Why a signet ring belongs to a duke and why a poor woman is forced to retrieve it.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Hidden identity hint",
+        "Framed and arrested",
+        "Sacrifice for love"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7865,
+      "rank": 4,
+      "duration": 22.9,
+      "episodes": [
+        12
+      ],
+      "segments_ts": [
+        [
+          12,
+          "00:46.60",
+          "01:09.50"
+        ]
+      ]
+    },
+    {
+      "id": "E42-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 42,
+          "start": 0.8,
+          "end": 26.5,
+          "start_beat": "B001",
+          "end_beat": "B013"
+        }
+      ],
+      "title": "Duke’s Arrival",
+      "hook": "Alexander strides in regal coat, a lion crest gleaming",
+      "cliffhanger": "I said arrest him!",
+      "why": "The regal coat and crest instantly signal royalty, while the shout of arrest sets up the mystery of his true identity.",
+      "pattern": "Hidden identity hint",
+      "hook_beat": "B001",
+      "cliffhanger_beat": "B013",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 8.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.3,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Hidden identity hint",
+        "Rescue from danger",
+        "Disowned / stripped of status"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7802,
+      "rank": 5,
+      "duration": 25.7,
+      "episodes": [
+        42
+      ],
+      "segments_ts": [
+        [
+          42,
+          "00:00.80",
+          "00:26.50"
+        ]
+      ]
+    },
+    {
+      "id": "E45-P1",
+      "kind": "multi-moment",
+      "segments": [
+        {
+          "ep": 45,
+          "start": 5.0,
+          "end": 19.0,
+          "start_beat": "B005",
+          "end_beat": "B014"
+        },
+        {
+          "ep": 45,
+          "start": 71.0,
+          "end": 113.2,
+          "start_beat": "B048",
+          "end_beat": "B069"
+        }
+      ],
+      "title": "Duke’s Sudden Declaration",
+      "hook": "Alexander drops to one knee, shackles clank as they fall",
+      "cliffhanger": "The Bishop declares she is not his lawful wife",
+      "why": "It opens with a dramatic, unexpected proposal that stops the scroll, then cuts on the shocking reversal that leaves viewers craving the rest of the story",
+      "pattern": "Unexpected proposal / contract marriage",
+      "hook_beat": "B005",
+      "cliffhanger_beat": "B069",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 9.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.2,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "The audience doesn’t know why the Bishop is interrupting or the stakes of the proclamation",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Unexpected proposal / contract marriage",
+        "Disowned / stripped of status",
+        "Sacrifice for love"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.765,
+      "rank": 6,
+      "duration": 56.2,
+      "episodes": [
+        45
+      ],
+      "segments_ts": [
+        [
+          45,
+          "00:05.00",
+          "00:19.00"
+        ],
+        [
+          45,
+          "01:11.00",
+          "01:53.20"
+        ]
+      ]
+    },
+    {
+      "id": "E13-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 13,
+          "start": 47.0,
+          "end": 80.5,
+          "start_beat": "B028",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Thorn‑Torture Devotion",
+      "hook": "Juliana, stop!",
+      "cliffhanger": "Juliana screams, blood‑smeared finger brushing a metallic object",
+      "why": "The opening scream pulls viewers in, the relentless thorns show her sacrifice, and the cliffhanger leaves them desperate to see the ring’s fate.",
+      "pattern": "Sacrifice for love",
+      "hook_beat": "B028",
+      "cliffhanger_beat": "B051",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 7.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.625,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [
+        "Sacrifice for love",
+        "Hidden identity hint",
+        "Villain plotting"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.754,
+      "rank": 7,
+      "duration": 33.5,
+      "episodes": [
+        13
+      ],
+      "segments_ts": [
+        [
+          13,
+          "00:47.00",
+          "01:20.50"
+        ]
+      ]
+    },
+    {
+      "id": "E24-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 24,
+          "start": 32.3,
+          "end": 63.8,
+          "start_beat": "B023",
+          "end_beat": "B045"
+        }
+      ],
+      "title": "The Strike & the Soot",
+      "hook": "The noblewoman rears back her riding crop and strikes Juliana violently across the torso.",
+      "cliffhanger": "Every stone. Perhaps when your hands are black enough, you will finally remember what you are.",
+      "why": "The opening strike grabs attention, and the threat of punishment keeps viewers on edge.",
+      "pattern": "Villain plotting",
+      "hook_beat": "B023",
+      "cliffhanger_beat": "B045",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 8.0,
+        "standalone": 7.0
+      },
+      "rules_score": 0.425,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "None – the brutality and threat are clear without prior knowledge.",
+      "passed": true,
+      "problems": [],
+      "fixes": [
+        "model repaired it after validator feedback: too short (14.9s < 20s)"
+      ],
+      "retrieved_patterns": [
+        "Villain plotting",
+        "Hidden identity hint",
+        "Sacrifice for love"
+      ],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.728,
+      "rank": 8,
+      "duration": 31.5,
+      "episodes": [
+        24
+      ],
+      "segments_ts": [
+        [
+          24,
+          "00:32.30",
+          "01:03.80"
+        ]
+      ]
+    }
+  ],
+  "log": [
+    {
+      "stage": "load",
+      "episodes": 8,
+      "beats": 520
+    },
+    {
+      "ep": 24,
+      "promo": "E24-P1",
+      "stage": "repair",
+      "errors_before": [
+        "too short (14.9s < 20s)"
+      ]
+    }
+  ]
+}

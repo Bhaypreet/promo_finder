@@ -1,0 +1,109 @@
+EPISODE NUMBER: Episode 2
+EPISODE LOGLINE: Celeste frames Mara for stealing the sapphires, and the police arrive at dawn; Adrian offers Mara a way out, but only if she signs a marriage contract with a man she met last night.
+CONTINUITY NOTES: Continues from the auction. Adrian's identity is still unknown.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. SERVANTS' QUARTERS - DAWN
+Scene start: 00:00.00
+Scene end: 00:24.20
+
+Actions and dialogue:
+
+**SOUND FX:**
+Start: (00:00.00) | End: (00:02.00)
+Fists pounding on a wooden door.
+
+**OFFICER (Barking):**
+Start: (00:02.00) | End: (00:04.40)
+"Mara Quinn! Open the door, police!"
+
+**CAMERA:**
+Start: (00:04.40) | End: (00:06.80)
+Mara jolts awake in a narrow bed, the sapphire necklace on the nightstand beside her.
+
+**ACTION:**
+Start: (00:06.80) | End: (00:09.80)
+The door bursts open. Two officers and Celeste step inside.
+
+**CELESTE (Venomous, Triumphant):**
+Start: (00:09.80) | End: (00:12.80)
+"There. I told you the thief would keep it close."
+
+**MARA (Desperate):**
+Start: (00:12.80) | End: (00:15.40)
+"He bought it for me! You were all there!"
+
+**OFFICER (Cold):**
+Start: (00:15.40) | End: (00:18.00)
+"The buyer never paid. Hands behind your back."
+
+**ACTION:**
+Start: (00:18.00) | End: (00:21.00)
+An officer snaps handcuffs onto Mara's wrists and drags her into the corridor.
+
+**CELESTE (Whispering, Cruel):**
+Start: (00:21.00) | End: (00:24.20)
+"Prison suits you, sister. Nobody visits a thief."
+
+SCENE 02
+Scene heading: EXT. QUINN ESTATE DRIVEWAY - DAWN
+Scene start: 00:24.20
+Scene end: 00:56.90
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:24.20) | End: (00:26.80)
+A black car blocks the police van. Adrian steps out holding a leather folder.
+
+**ADRIAN (Calm, Commanding):**
+Start: (00:26.80) | End: (00:29.40)
+"Release her. The money cleared ten minutes ago."
+
+**OFFICER (Uncertain):**
+Start: (00:29.40) | End: (00:31.40)
+"Sir, the family filed a complaint."
+
+**ADRIAN (Icy):**
+Start: (00:31.40) | End: (00:34.40)
+"Then the family can explain the forged complaint to my lawyers."
+
+**ACTION:**
+Start: (00:34.40) | End: (00:37.40)
+Adrian opens the folder and holds out a pen to Mara, still in handcuffs.
+
+**ADRIAN (Low, Serious):**
+Start: (00:37.40) | End: (00:40.60)
+"Sign this and no one in this house can touch you again."
+
+**MARA (Wary):**
+Start: (00:40.60) | End: (00:42.60)
+"What is it?"
+
+**ADRIAN (Matter-of-fact):**
+Start: (00:42.60) | End: (00:45.00)
+"A marriage contract. One year."
+
+**CAMERA:**
+Start: (00:45.00) | End: (00:47.40)
+Close-up on Celeste in the doorway, her face draining of colour.
+
+**MARA (Defiant):**
+Start: (00:47.40) | End: (00:50.40)
+"Why would a stranger marry a disgraced maid?"
+
+**ADRIAN (Ominous):**
+Start: (00:50.40) | End: (00:53.40)
+"Because your stepmother poisoned my father. And you are my only witness."
+
+**SOUND FX:**
+Start: (00:53.40) | End: (00:55.90)
+Thunder cracks; ominous drone swells to a cliffhanger sting.
+
+**CAMERA:**
+Start: (00:55.90) | End: (00:56.90)
+Cut to black.
+
+--- SCRIPT END ---

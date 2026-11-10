@@ -1,0 +1,19 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "picker": "groq:openai/gpt-oss-20b",
+  "fallback": "",
+  "viewer": null,
+  "playbook_rag": false,
+  "episodes": 8,
+  "beats": 520,
+  "seconds": 120.5,
+  "usage": {
+    "groq:openai/gpt-oss-20b": {
+      "calls": 3,
+      "input_tokens": 7198,
+      "output_tokens": 2144,
+      "cache_hits": 9
+    }
+  },
+  "input": "data\\I Married a Broken Soldier. He was a Duke"
+}

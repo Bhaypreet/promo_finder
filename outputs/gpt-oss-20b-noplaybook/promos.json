@@ -1,0 +1,639 @@
+{
+  "show": "I Married a Broken Soldier. He was a Duke",
+  "meta": {
+    "show": "I Married a Broken Soldier. He was a Duke",
+    "picker": "groq:openai/gpt-oss-20b",
+    "fallback": "",
+    "viewer": null,
+    "playbook_rag": false,
+    "episodes": 8,
+    "beats": 520,
+    "seconds": 120.5,
+    "usage": {
+      "groq:openai/gpt-oss-20b": {
+        "calls": 3,
+        "input_tokens": 7198,
+        "output_tokens": 2144,
+        "cache_hits": 9
+      }
+    },
+    "input": "data\\I Married a Broken Soldier. He was a Duke"
+  },
+  "promos": [
+    {
+      "id": "E42-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 42,
+          "start": 23.4,
+          "end": 77.8,
+          "start_beat": "B013",
+          "end_beat": "B036"
+        }
+      ],
+      "title": "Duke’s Reckoning",
+      "hook": "I said arrest him!",
+      "cliffhanger": "And now, Rupert... we settle what you stole.",
+      "why": "The clip opens with a dramatic shout that stops scrolling, shows the conflict with guards, and ends on a threat that leaves viewers wanting to know the outcome.",
+      "pattern": "other",
+      "hook_beat": "B013",
+      "cliffhanger_beat": "B036",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 9.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.575,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.8213,
+      "rank": 1,
+      "duration": 54.4,
+      "episodes": [
+        42
+      ],
+      "segments_ts": [
+        [
+          42,
+          "00:23.40",
+          "01:17.80"
+        ]
+      ]
+    },
+    {
+      "id": "E13-P1",
+      "kind": "multi-moment",
+      "segments": [
+        {
+          "ep": 13,
+          "start": 47.0,
+          "end": 56.8,
+          "start_beat": "B028",
+          "end_beat": "B035"
+        },
+        {
+          "ep": 13,
+          "start": 74.0,
+          "end": 107.0,
+          "start_beat": "B049",
+          "end_beat": "B066"
+        }
+      ],
+      "title": "Thorn‑Torture & Treasure",
+      "hook": "Juliana, stop!",
+      "cliffhanger": "Her blood‑smeared index finger brushes against a solid metallic object",
+      "why": "The hook grabs attention with a desperate plea, the cliffhanger teases a hidden treasure, and the two non‑overlapping segments keep the clip under 45 s while showing enough context for a new viewer.",
+      "pattern": "other",
+      "hook_beat": "B028",
+      "cliffhanger_beat": "B066",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.625,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [
+        "model repaired it after validator feedback: too long (62.5s > 60s); segments overlap"
+      ],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.8092,
+      "rank": 2,
+      "duration": 42.8,
+      "episodes": [
+        13
+      ],
+      "segments_ts": [
+        [
+          13,
+          "00:47.00",
+          "00:56.80"
+        ],
+        [
+          13,
+          "01:14.00",
+          "01:47.00"
+        ]
+      ]
+    },
+    {
+      "id": "E12-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 12,
+          "start": 13.9,
+          "end": 69.5,
+          "start_beat": "B010",
+          "end_beat": "B044"
+        }
+      ],
+      "title": "The Ultimatum",
+      "hook": "The proof is in his coat, Juliana.",
+      "cliffhanger": "Fail, or refuse, and your husband hangs from the gallows.",
+      "why": "A brutal threat and a chilling promise hook viewers, ending on a deadly ultimatum that leaves them wanting more.",
+      "pattern": "other",
+      "hook_beat": "B010",
+      "cliffhanger_beat": "B044",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 9.0,
+        "standalone": 9.0
+      },
+      "rules_score": 0.5,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "Why Clarissa is threatening Alexander’s life.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7902,
+      "rank": 3,
+      "duration": 55.6,
+      "episodes": [
+        12
+      ],
+      "segments_ts": [
+        [
+          12,
+          "00:13.90",
+          "01:09.50"
+        ]
+      ]
+    },
+    {
+      "id": "E24-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 24,
+          "start": 32.3,
+          "end": 63.8,
+          "start_beat": "B023",
+          "end_beat": "B045"
+        }
+      ],
+      "title": "The Strike & The Return",
+      "hook": "The noblewoman suddenly rears back her riding crop and strikes Juliana violently across the torso.",
+      "cliffhanger": "The noblewoman threatens Juliana with a harsh command that leaves her fate uncertain.",
+      "why": "The opening strike grabs attention, and the cliffhanger leaves viewers wondering what will happen to Juliana.",
+      "pattern": "other",
+      "hook_beat": "B023",
+      "cliffhanger_beat": "B045",
+      "scores": {
+        "hook": 9.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.425,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [
+        "model repaired it after validator feedback: too short (18.5s < 20s)"
+      ],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7835,
+      "rank": 4,
+      "duration": 31.5,
+      "episodes": [
+        24
+      ],
+      "segments_ts": [
+        [
+          24,
+          "00:32.30",
+          "01:03.80"
+        ]
+      ]
+    },
+    {
+      "id": "E05-P3",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 70.3,
+          "end": 91.0,
+          "start_beat": "B041",
+          "end_beat": "B051"
+        }
+      ],
+      "title": "Redemption Hand",
+      "hook": "The Mysterious Bearded Man kneels beside Juliana, offering his scarred hand to retrieve the ledger.",
+      "cliffhanger": "The Mysterious Bearded Man reaches out with both hands, clasping his strong hands tenderly over hers and the book.",
+      "why": "A dramatic rescue followed by a tender, unresolved moment showcases the new alliance and leaves viewers wanting to see the conflict resolve.",
+      "pattern": "other",
+      "hook_beat": "B041",
+      "cliffhanger_beat": "B051",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.35,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "Juliana’s new husband’s protective gesture signals a turning point in her struggle.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7625,
+      "rank": 5,
+      "duration": 20.7,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "01:10.30",
+          "01:31.00"
+        ]
+      ]
+    },
+    {
+      "id": "E05-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 4.0,
+          "end": 29.0,
+          "start_beat": "B003",
+          "end_beat": "B016"
+        }
+      ],
+      "title": "Family Fall",
+      "hook": "Lord Ashcroft’s cold command: “Miss Ashcroft.”",
+      "cliffhanger": "From this moment, you are dead to the Ashcroft family.",
+      "why": "A brutal family rejection cuts to a chilling ultimatum, leaving viewers craving the next step in Juliana’s fight.",
+      "pattern": "other",
+      "hook_beat": "B003",
+      "cliffhanger_beat": "B016",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.3,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "The ledger is a symbol of Juliana’s inheritance and her mother’s legacy.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.755,
+      "rank": 6,
+      "duration": 25.0,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "00:04.00",
+          "00:29.00"
+        ]
+      ]
+    },
+    {
+      "id": "E05-P2",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 5,
+          "start": 46.6,
+          "end": 69.0,
+          "start_beat": "B026",
+          "end_beat": "B038"
+        }
+      ],
+      "title": "Mud & Betrayal",
+      "hook": "Lady Ashcroft’s venomous threat: “…that belongs to this family.”",
+      "cliffhanger": "Juliana drops to her knees onto the wet courtyard pavement, oblivious to the dirt soaking through her white bridal gown.",
+      "why": "The public shaming and the physical fall create a visceral hook, ending on a moment of vulnerability that begs for rescue.",
+      "pattern": "other",
+      "hook_beat": "B026",
+      "cliffhanger_beat": "B038",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.3,
+      "blind": null,
+      "spoiler_risk": "low",
+      "context_needed": "The ledger’s destruction is a public humiliation that fuels Juliana’s desperation.",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.755,
+      "rank": 7,
+      "duration": 22.4,
+      "episodes": [
+        5
+      ],
+      "segments_ts": [
+        [
+          5,
+          "00:46.60",
+          "01:09.00"
+        ]
+      ]
+    },
+    {
+      "id": "E45-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 45,
+          "start": 53.8,
+          "end": 91.3,
+          "start_beat": "B039",
+          "end_beat": "B058"
+        }
+      ],
+      "title": "The Unshackling & The Shock",
+      "hook": "You poisoned my mother. You tortured my wife.",
+      "cliffhanger": "No one will bow yet!",
+      "why": "Starts with a brutal accusation that stops scrolling, ends with a bishop’s dramatic entrance, leaving viewers wondering how the marriage will be challenged.",
+      "pattern": "other",
+      "hook_beat": "B039",
+      "cliffhanger_beat": "B059",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.5,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [
+        "model repaired it after validator feedback: too long (103.3s > 60s)"
+      ],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.725,
+      "rank": 8,
+      "duration": 37.5,
+      "episodes": [
+        45
+      ],
+      "segments_ts": [
+        [
+          45,
+          "00:53.80",
+          "01:31.30"
+        ]
+      ]
+    },
+    {
+      "id": "E41-P1",
+      "kind": "single",
+      "segments": [
+        {
+          "ep": 41,
+          "start": 17.3,
+          "end": 60.8,
+          "start_beat": "B012",
+          "end_beat": "B033"
+        }
+      ],
+      "title": "Chain‑Break",
+      "hook": "Juliana is marched forward, shackled, into the cathedral",
+      "cliffhanger": "Juliana defiantly questions Catherine’s power",
+      "why": "A single, punchy sequence that shows Juliana’s humiliation and her fiery retort, leaving viewers craving the fallout.",
+      "pattern": "other",
+      "hook_beat": "B012",
+      "cliffhanger_beat": "B033",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 8.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.45,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7175,
+      "rank": 9,
+      "duration": 43.5,
+      "episodes": [
+        41
+      ],
+      "segments_ts": [
+        [
+          41,
+          "00:17.30",
+          "01:00.80"
+        ]
+      ]
+    },
+    {
+      "id": "E27-P1",
+      "kind": "multi-moment",
+      "segments": [
+        {
+          "ep": 27,
+          "start": 44.2,
+          "end": 51.5,
+          "start_beat": "B024",
+          "end_beat": "B027"
+        },
+        {
+          "ep": 27,
+          "start": 77.8,
+          "end": 92.8,
+          "start_beat": "B047",
+          "end_beat": "B055"
+        },
+        {
+          "ep": 27,
+          "start": 122.8,
+          "end": 145.2,
+          "start_beat": "B078",
+          "end_beat": "B089"
+        }
+      ],
+      "title": "Ring of Deception",
+      "hook": "What is your husband's name?",
+      "cliffhanger": "She secretly administers an unidentified substance to a helpless woman.",
+      "why": "The clip opens with a shocking revelation about a family crest, then cuts to a dramatic confrontation where Juliana is framed for poisoning, leaving viewers desperate to know the truth.",
+      "pattern": "other",
+      "hook_beat": "B024",
+      "cliffhanger_beat": "B089",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 9.0,
+        "standalone": 8.0
+      },
+      "rules_score": 0.525,
+      "blind": null,
+      "spoiler_risk": "high",
+      "context_needed": "Why is the Dowager Duchess suspicious of Juliana?",
+      "passed": true,
+      "problems": [],
+      "fixes": [],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.7085,
+      "rank": 10,
+      "duration": 44.7,
+      "episodes": [
+        27
+      ],
+      "segments_ts": [
+        [
+          27,
+          "00:44.20",
+          "00:51.50"
+        ],
+        [
+          27,
+          "01:17.80",
+          "01:32.80"
+        ],
+        [
+          27,
+          "02:02.80",
+          "02:25.20"
+        ]
+      ]
+    },
+    {
+      "id": "E45-P2",
+      "kind": "multi-moment",
+      "segments": [
+        {
+          "ep": 45,
+          "start": 21.8,
+          "end": 24.5,
+          "start_beat": "B017",
+          "end_beat": "B018"
+        },
+        {
+          "ep": 45,
+          "start": 71.0,
+          "end": 74.5,
+          "start_beat": "B048",
+          "end_beat": "B048"
+        }
+      ],
+      "title": "Duke’s Declaration",
+      "hook": "Alexander drops to one knee and drops the ducal cloak over Juliana",
+      "cliffhanger": "The priest’s voice booms, \"You are not Duchess of Ashburton.\"",
+      "why": "It showcases a powerful moment of elevation followed by a sudden legal blow, keeping viewers hooked.",
+      "pattern": "other",
+      "hook_beat": "B017",
+      "cliffhanger_beat": "B067",
+      "scores": {
+        "hook": 8.0,
+        "cliffhanger": 9.0,
+        "standalone": 7.0
+      },
+      "rules_score": 0.625,
+      "blind": null,
+      "spoiler_risk": "medium",
+      "context_needed": "The viewer must understand the significance of the ducal cloak and the title of Duchess.",
+      "passed": false,
+      "problems": [
+        "too short (6.2s < 20s)"
+      ],
+      "fixes": [
+        "model repaired it after validator feedback: too long (117.5s > 60s)"
+      ],
+      "retrieved_patterns": [],
+      "model": "groq:openai/gpt-oss-20b",
+      "final_score": 0.498,
+      "rank": 11,
+      "duration": 6.2,
+      "episodes": [
+        45
+      ],
+      "segments_ts": [
+        [
+          45,
+          "00:21.80",
+          "00:24.50"
+        ],
+        [
+          45,
+          "01:11.00",
+          "01:14.50"
+        ]
+      ]
+    }
+  ],
+  "log": [
+    {
+      "stage": "load",
+      "episodes": 8,
+      "beats": 520
+    },
+    {
+      "ep": 13,
+      "promo": "E13-P1",
+      "stage": "repair",
+      "errors_before": [
+        "too long (62.5s > 60s)",
+        "segments overlap"
+      ]
+    },
+    {
+      "ep": 24,
+      "promo": "E24-P1",
+      "stage": "repair",
+      "errors_before": [
+        "too short (18.5s < 20s)"
+      ]
+    },
+    {
+      "ep": 45,
+      "promo": "E45-P1",
+      "stage": "repair",
+      "errors_before": [
+        "too long (103.3s > 60s)"
+      ]
+    },
+    {
+      "ep": 45,
+      "promo": "E45-P2",
+      "stage": "repair",
+      "errors_before": [
+        "too long (117.5s > 60s)"
+      ]
+    }
+  ]
+}
