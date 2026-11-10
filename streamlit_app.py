@@ -22,10 +22,8 @@ try:                                              # hosted file systems can be r
 except OSError:
     os.environ.setdefault("PROMO_CACHE_DIR", str(Path(tempfile.gettempdir()) / "promo_cache"))
 try:                                              # Streamlit secrets -> env, so the pipeline sees the key
-    for name in ("GROQ_API_KEY", "GROK_API_KEY"):  # accept the common misspelling too
-        if name in st.secrets:
-            os.environ.setdefault("GROQ_API_KEY", str(st.secrets[name]).strip())
-            break
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ.setdefault("GROQ_API_KEY", str(st.secrets["GROQ_API_KEY"]).strip())
 except Exception:
     pass
 
