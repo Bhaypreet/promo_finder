@@ -90,6 +90,9 @@ with right:
     mode = st.radio("Mode", modes, index=0 if HAS_KEY else 1, disabled=not HAS_KEY)
     if not HAS_KEY:
         st.caption("No GROQ_API_KEY is configured on this deployment, so only rules-only mode is available.")
+    else:
+        st.caption("The AI pipeline takes about 4 minutes on the 3-episode demo: Groq's free tier allows ~8K tokens "
+                   "a minute per model. Rules-only returns in about a second.")
     episodes = st.text_input("Episodes (optional)", placeholder="e.g. 1-5 or 1,3,7",
                              help="Leave empty for all. The AI mode takes about a minute per episode on Groq's free tier.")
     c1, c2 = st.columns(2)
