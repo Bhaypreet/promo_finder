@@ -28,6 +28,7 @@ totals = json.loads((ROOT / "docs" / "facts.json").read_text(encoding="utf-8"))[
 DRIVE = "https://drive.google.com/drive/folders/1QTSzxsaEqu4_PbWOeR150AJ3hQIbad43"
 DEMO = "https://promo-finder-demo.streamlit.app"
 REPO = "https://github.com/Bhaypreet/promo_finder"
+EXPLAINER = "https://claude.ai/artifact/G2XiCpShwi8UBUUFpgb8bV"
 
 # ---------- fonts and styles ----------
 REG, BOLD = "Helvetica", "Helvetica-Bold"
@@ -132,10 +133,13 @@ def cut_of(pid):
 # ---------- page 1 ----------
 story = [
     p("Promo Finder: ranked promo cut lists from screenplays", TITLE), Spacer(1, 2),
-    p(f"Kuku AI Generalist Assignment &middot; Problem 1, Find the Promos<br/>"
-      f"Live demo: <link href='{DEMO}' color='#a3214f'><u>promo-finder-demo.streamlit.app</u></link> &middot; "
-      f"Code: <link href='{REPO}' color='#a3214f'><u>github.com/Bhaypreet/promo_finder</u></link> &middot; "
-      f"Raw outputs: <link href='{DRIVE}' color='#a3214f'><u>project folder</u></link>", SUB),
+    p("Kuku AI Generalist Assignment &middot; Problem 1, Find the Promos", SUB), Spacer(1, 2),
+    table([["Live app (Streamlit)", "Code + run steps", "Raw outputs", "Longer explainer"],
+           [f"<link href='{DEMO}' color='#a3214f'><u>{DEMO}</u></link>",
+            f"<link href='{REPO}' color='#a3214f'><u>github.com/Bhaypreet/promo_finder</u></link>",
+            f"<link href='{DRIVE}' color='#a3214f'><u>Drive folder</u></link>",
+            f"<link href='{EXPLAINER}' color='#a3214f'><u>Project write-up</u></link>"]],
+          [58 * mm, 52 * mm, 30 * mm, 40 * mm], zebra=False),
     Spacer(1, 3),
     p("Give the tool a folder or .zip of episode screenplays. It returns a ranked list of 20-60 s promos. Each one comes "
       "with the episode and start/end time of every segment, the hook, the cliffhanger, a one-line reason it works, and "
@@ -276,13 +280,27 @@ story += [
             "The cold viewer's score is 40% of the rank, so these clips sink: the top 10 average 6.1/10 on understanding vs 4.1 overall."],
            ["Spoilers are under-flagged", "The model cannot tell which reveal is the show's big twist (it marked Ep 45 'low').",
             "Editor review of the top 10. Next: a per-show 'never reveal' list in the knowledge base."],
-           ["Self-scores run high", "The picker rates almost every pick 8-9/10.",
-            "Only 45% of the rank, balanced by the cold viewer and rules."],
            ["Text cannot see the picture", "A badly framed slap still reads well on paper.",
             "The editor watches the shortlist, about 10 minutes per show instead of every episode."],
            ["Cross-episode montages are weakest", "Moments from different episodes need bridging context.",
             "Kept, but ranked low. Next: limit them to 2-3 moments from neighbouring episodes."]],
           [38 * mm, 66 * mm, 76 * mm], size=7.4),
+
+    p("Deployment, and what went wrong when I used it", H),
+    p(f"I deployed the prototype on <b>Streamlit Community Cloud</b> "
+      f"(<link href='{DEMO}' color='#a3214f'><u>{DEMO}</u></link>), running the same pipeline as the command line. "
+      "Using it myself showed two problems:", S),
+    *bullets([
+        "<b>Checking the results by hand took a lot of time.</b> On the free tier an AI run takes about 4 minutes for the "
+        f"3-episode demo and {totals['minutes']} minutes for the full pack. Then every promo had to be checked against the "
+        "script: find the start and end time, confirm the hook and the cliffhanger line. Doing that for "
+        f"{n} promos is slow, so the checks code can do (length, 3 s hook, shot-change cuts, ends on the cliffhanger) run "
+        "on every promo, and a person only reviews the ranked top 10. Next: show each promo's script lines in the app.",
+        "<b>The app could get stuck on \"Another run is in progress\".</b> Only one AI run is allowed at a time, because "
+        "every visitor shares one free-tier token budget. If someone refreshed the page mid-run, the old run held the lock "
+        "and new visitors waited with no result. Fixed: rules-only mode never waits, a busy AI run says so instead of "
+        "hanging, a stuck run is released after 12 minutes, and every model call times out after 90 s.",
+    ], S),
 
     p("Tools used, and where they got it wrong", H),
     p("<b>Building:</b> Claude Code as a coding assistant for the parser, pipeline, evaluation scripts and first drafts "

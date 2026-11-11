@@ -100,7 +100,9 @@ class LLM:
 
     def _make(self, spec: str, temperature: float):
         provider, _, name = spec.partition(":")
-        kwargs = {"temperature": temperature, "max_retries": 6, "max_tokens": self.max_tokens}
+        # timeout: a stalled HTTP call used to hang the whole run (and the web demo with it).
+        # max_retries stays low because structured() below already retries with Groq's suggested wait.
+        kwargs = {"temperature": temperature, "max_retries": 2, "timeout": 90, "max_tokens": self.max_tokens}
         if provider == "groq" and "gpt-oss" in name:
             kwargs["reasoning_effort"] = "low"      # reasoning tokens count against the free-tier budget
         return init_chat_model(name, model_provider=provider, **kwargs)

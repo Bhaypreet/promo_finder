@@ -38,9 +38,36 @@ REPO = "https://github.com/Bhaypreet/promo_finder"
 st.set_page_config(page_title="Promo Finder", page_icon="🎬", layout="wide")
 
 
+STALE_AFTER = 12 * 60                             # an AI run never legitimately takes this long on the demo
+
+
 @st.cache_resource
-def run_lock() -> threading.Lock:
-    return threading.Lock()                       # one run at a time: the free-tier token budget is shared
+def run_slot() -> dict:
+    """One AI run at a time (the free-tier token budget is shared by every visitor).
+
+    The old version waited on a plain lock. If a visitor refreshed the page mid-run, Streamlit could not stop the
+    thread stuck inside the pipeline, so the lock stayed held and every later visitor saw "Another run is in
+    progress" forever. Now: nobody ever waits blindly, rules-only mode skips the slot, and a slot older than
+    STALE_AFTER is taken over.
+    """
+    return {"guard": threading.Lock(), "since": None}
+
+
+def claim_slot() -> float | None:
+    """Returns None if claimed, else how many seconds the current run has been going."""
+    slot = run_slot()
+    with slot["guard"]:
+        now = time.time()
+        if slot["since"] is not None and now - slot["since"] < STALE_AFTER:
+            return now - slot["since"]
+        slot["since"] = now
+        return None
+
+
+def free_slot() -> None:
+    slot = run_slot()
+    with slot["guard"]:
+        slot["since"] = None
 
 
 def show_folder(upload) -> tuple[Path, str]:
@@ -114,21 +141,26 @@ if go:
         st.warning(f"{n_eps} episodes in AI mode will take roughly {n_eps} minutes on the free tier. "
                    "Enter an episode range (e.g. 1-5) for a quicker run, or use rules-only mode.")
     out = Path(tempfile.mkdtemp(prefix="promos_"))
-    lock = run_lock()
+    if not rules_only:
+        busy = claim_slot()
+        if busy is not None:
+            st.warning(f"Another visitor's AI run started {busy / 60:.1f} min ago and is using the shared free-tier "
+                       "token budget. Try again in a few minutes, or pick **Rules only** for an instant result.")
+            st.stop()
     with st.status("Finding promos...", expanded=True) as status:
-        if lock.locked():
-            st.write("Another run is in progress; waiting for it to finish.")
-        with lock:
-            st.write(f"{show}: {n_eps} episode files, mode: {'rules only' if rules_only else 'AI pipeline'}.")
-            t0 = time.time()
-            try:
-                promos, meta = run(str(folder), show=show, episodes=episodes or None, rules_only=rules_only,
-                                   montage=montage, use_viewer=use_viewer, out=str(out), quiet=True)
-            except Exception as e:                                   # show the reason, keep the app alive
-                status.update(label="Run failed", state="error")
-                st.error(f"{type(e).__name__}: {str(e)[:400]}")
-                st.stop()
-            status.update(label=f"Done in {time.time() - t0:.1f} s", state="complete", expanded=False)
+        st.write(f"{show}: {n_eps} episode files, mode: {'rules only' if rules_only else 'AI pipeline'}.")
+        t0 = time.time()
+        try:
+            promos, meta = run(str(folder), show=show, episodes=episodes or None, rules_only=rules_only,
+                               montage=montage, use_viewer=use_viewer, out=str(out), quiet=True)
+        except Exception as e:                                       # show the reason, keep the app alive
+            status.update(label="Run failed", state="error")
+            st.error(f"{type(e).__name__}: {str(e)[:400]}")
+            st.stop()
+        finally:
+            if not rules_only:
+                free_slot()
+        status.update(label=f"Done in {time.time() - t0:.1f} s", state="complete", expanded=False)
     st.session_state["result"] = {
         "show": show, "meta": meta,
         "promos": json.loads((out / "promos.json").read_text(encoding="utf-8"))["promos"],
@@ -159,7 +191,7 @@ if res:
             "Viewer stop/next/understood": f"{b['stop_scrolling']}/{b['want_next']}/{b['understood']}" if b else "",
             "Checks": "pass" if p["passed"] else "; ".join(p["problems"]),
         })
-    st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+    st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
 
     d = st.columns(3)
     d[0].download_button("Download cut list (CSV)", res["csv"], "promos_cutlist.csv", "text/csv")

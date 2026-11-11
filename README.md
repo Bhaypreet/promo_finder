@@ -5,6 +5,9 @@ Kuku AI Generalist Assignment, **Problem 1: Find the Promos**.
 **Live demo:** https://promo-finder-demo.streamlit.app. It runs on an original 3-episode demo show, or you can upload
 a .zip of episode screenplays. AI mode needs `GROQ_API_KEY` in the app's secrets; without it, the app runs rules-only.
 
+One AI run at a time shares the free-tier token budget. If another visitor's run is going, the app says so
+instead of waiting; rules-only mode never waits, and a stuck run is released after 12 minutes.
+
 Reads a folder (or .zip) of timestamped episode screenplays and returns ranked 20–60 s promos. Each promo
 comes with the episode and start/end timestamps of every segment, the hook, the cliffhanger, a one-line
 "why", and QA results.
