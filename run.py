@@ -53,14 +53,19 @@ def parse_eps(spec: str | None) -> list[int] | None:
 def run(input_path: str, show: str | None = None, picker: str = "groq:openai/gpt-oss-120b",
         viewer: str = "groq:qwen/qwen3.8-27b", fallback: str | None = "groq:openai/gpt-oss-20b",
         episodes: str | None = None, rules_only: bool = False, montage: bool = True, use_viewer: bool = True,
-        playbook: bool = True, review: bool = False, workers: int = 4, out: str | None = None, quiet: bool = False):
+        playbook: bool = True, review: bool = False, workers: int = 4, out: str | None = None, quiet: bool = False,
+        api_key: str | None = None, base_url: str | None = None, tpm: int | None = None):
+    """api_key / base_url: run on someone else's key or an OpenAI-compatible gateway (e.g. a company's own API)."""
     load_env()
     enable_cache()
     folder = resolve_input(input_path)
     show = show or folder.name
     R = Resources(show=show,
-                  picker=None if rules_only else LLM(picker, max_tokens=1800, fallback=fallback),
-                  viewer=None if rules_only or not use_viewer else LLM(viewer, max_tokens=600, otpm=950, expected_out=320),
+                  picker=None if rules_only else LLM(picker, max_tokens=1800, fallback=fallback, tpm=tpm or 7800,
+                                                     api_key=api_key, base_url=base_url),
+                  viewer=None if rules_only or not use_viewer else LLM(
+                      viewer, max_tokens=600, tpm=tpm or 7800, expected_out=320, api_key=api_key, base_url=base_url,
+                      otpm=950 if viewer.startswith("groq:") else None),
                   playbook=None if rules_only or not playbook else PlaybookIndex(),
                   montage=montage and not rules_only, review=review)
     graph = build_graph(R)
@@ -78,7 +83,10 @@ def run(input_path: str, show: str | None = None, picker: str = "groq:openai/gpt
         state = graph.invoke(Command(resume={"approve": [x.strip() for x in ids.split(",") if x.strip()]}), cfg)
         print(f"approved {state.get('approved')} -> added to kb/approved_promos.jsonl")
     promos = state["ranked"]
-    meta = {"show": show, "picker": "rules" if rules_only else picker, "fallback": None if rules_only else fallback,
+    errors = [e["error"] for e in state.get("log", []) if isinstance(e, dict) and e.get("error")]
+    if not rules_only and not promos and errors:              # e.g. a rejected key: say why, don't return nothing
+        raise RuntimeError(f"The model returned no promos. First error: {errors[0]}")
+    meta = {"show": show, "picker": "rules" if rules_only else picker, "endpoint": base_url or "provider default", "fallback": None if rules_only else fallback,
             "viewer": None if (rules_only or not use_viewer) else viewer, "playbook_rag": playbook and not rules_only,
             "episodes": len(state["episodes"]), "beats": sum(len(e.beats) for e in state["episodes"]),
             "seconds": round(time.time() - t0, 1), "usage": llm_mod.USAGE, "input": str(folder)}
@@ -112,9 +120,20 @@ def main() -> None:
     ap.add_argument("--review", action="store_true", help="pause for an editor to approve picks")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--out")
+    ap.add_argument("--base-url", help="OpenAI-compatible endpoint, e.g. https://<gateway>/v1 (with --picker openai:<model>)")
+    ap.add_argument("--api-key-env", help="name of the env var that holds the key, e.g. KUKU_API_KEY")
+    ap.add_argument("--tpm", type=int, help="tokens-per-minute limit of that key (default 7800, Groq free tier)")
     a = ap.parse_args()
-    run(a.input, a.show, a.picker, a.viewer, a.fallback, a.episodes, a.rules_only, not a.no_montage,
-        not a.no_viewer, not a.no_playbook, a.review, a.workers, a.out)
+    key = None
+    if a.api_key_env:
+        load_env()
+        import os
+        key = os.environ.get(a.api_key_env)
+        if not key:
+            sys.exit(f"{a.api_key_env} is not set (put it in .env or the environment)")
+    fallback = a.fallback if a.picker.startswith("groq:") else None
+    run(a.input, a.show, a.picker, a.viewer, fallback, a.episodes, a.rules_only, not a.no_montage,
+        not a.no_viewer, not a.no_playbook, a.review, a.workers, a.out, api_key=key, base_url=a.base_url, tpm=a.tpm)
 
 
 if __name__ == "__main__":

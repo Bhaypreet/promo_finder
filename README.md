@@ -41,6 +41,23 @@ docker build -t promo-finder . && docker run -p 7860:7860 -e GROQ_API_KEY=... pr
 Any provider LangChain's `init_chat_model` supports works as `provider:model`
 (e.g. `openai:gpt-4.1-mini`, `huggingface:<model-id>`, or Kuku's own OpenAI-compatible gateway) once its integration package and API key are installed.
 
+### Run on someone else's key (e.g. Kuku's own models)
+
+**In the web app:** open **Use your own API key**, pick the provider (Groq, OpenAI, or any
+OpenAI-compatible endpoint with a base URL), paste the key, set the picker and cold-viewer models, and press
+**Check key**. AI mode then runs on that key, skips the shared free-tier queue, and uses the key's own
+tokens-per-minute limit. The key lives only in that browser tab: it is never saved, logged or cached.
+
+**From the command line** (the key stays in `.env`, never on the command line):
+
+```bash
+echo KUKU_API_KEY=... >> .env
+python run.py --input show/ --picker openai:<model> --viewer openai:<other-model>               --base-url https://<gateway>/v1 --api-key-env KUKU_API_KEY --tpm 100000
+```
+
+If the gateway does not support strict JSON-schema output, the code falls back to tool calling on its own.
+A rejected key or an unknown model stops the run with a clear error instead of returning an empty list.
+
 Outputs land in `outputs/<model>/`:
 
 | file | for whom | what |

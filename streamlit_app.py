@@ -27,13 +27,24 @@ try:                                              # Streamlit secrets -> env, so
 except Exception:
     pass
 
-from promo_finder.llm import load_env  # noqa: E402
+from promo_finder.llm import check_key, load_env  # noqa: E402
 from run import run  # noqa: E402
 
 load_env()
 DEMO = ROOT / "samples" / "demo_show"
 HAS_KEY = bool(os.environ.get("GROQ_API_KEY"))
 REPO = "https://github.com/Bhaypreet/promo_finder"
+# label -> (kind, default picker, default cold viewer, default tokens/min)
+PROVIDERS = {
+    "OpenAI-compatible endpoint (custom base URL)": ("compat", "", "", 100000),
+    "Groq": ("groq", "openai/gpt-oss-120b", "qwen/qwen3.8-27b", 7800),
+    "OpenAI": ("openai", "gpt-4.1-mini", "gpt-4.1-nano", 200000),
+}
+
+
+def own_spec(provider: str, model: str) -> str:
+    """LangChain provider:model string. Custom gateways speak the OpenAI protocol."""
+    return ("groq:" if PROVIDERS[provider][0] == "groq" else "openai:") + model
 
 st.set_page_config(page_title="Promo Finder", page_icon="🎬", layout="wide")
 
@@ -113,13 +124,40 @@ with left:
     if source.startswith("Demo"):
         st.caption("A short original show written for this demo, in the same screenplay format as the input pack.")
 with right:
-    modes = ["AI pipeline (Groq LLMs + RAG)", "Rules only (no AI, instant)"]
-    mode = st.radio("Mode", modes, index=0 if HAS_KEY else 1, disabled=not HAS_KEY)
-    if not HAS_KEY:
-        st.caption("No GROQ_API_KEY is configured on this deployment, so only rules-only mode is available.")
-    else:
-        st.caption("The AI pipeline takes about 4 minutes on the 3-episode demo: Groq's free tier allows ~8K tokens "
-                   "a minute per model. Rules-only returns in about a second.")
+    mode_box = st.container()                     # filled below, once we know whether a key was pasted
+    with st.expander("Use your own API key (e.g. Kuku's own models)", expanded=False):
+        provider = st.selectbox("Provider", list(PROVIDERS))
+        own_key = st.text_input("API key", type="password", key="own_key",
+                                help="Used only for runs in this browser tab. Never saved, logged or cached.").strip()
+        own_url = st.text_input("Base URL", placeholder="https://<your-gateway>/v1",
+                                help="The OpenAI-compatible endpoint of your API.").strip() \
+            if PROVIDERS[provider][0] == "compat" else ""
+        d_pick, d_view, d_tpm = PROVIDERS[provider][1:]
+        pick_model = st.text_input("Picker model", value=d_pick, key=f"pick_{provider}").strip()
+        view_model = st.text_input("Cold-viewer model", value=d_view, key=f"view_{provider}",
+                                   help="Ideally a different model from the picker, so it judges the clip fresh.").strip()
+        own_tpm = int(st.number_input("Tokens-per-minute limit of this key", min_value=1000, value=d_tpm, step=1000,
+                                      key=f"tpm_{provider}"))
+        if st.button("Check key", disabled=not own_key or not pick_model):
+            try:
+                reply = check_key(own_spec(provider, pick_model), own_key, own_url or None)
+                st.success(f"Key works. {pick_model} replied: {reply!r}")
+            except Exception as e:
+                st.error(f"Key check failed: {type(e).__name__}: {str(e)[:300]}")
+        st.caption("With your own key, runs skip the shared free-tier queue and go as fast as the key allows.")
+    use_own = bool(own_key and pick_model)
+    can_ai = HAS_KEY or use_own
+    with mode_box:
+        modes = ["AI pipeline (LLMs + RAG)", "Rules only (no AI, instant)"]
+        mode = st.radio("Mode", modes, index=0 if can_ai else 1, disabled=not can_ai)
+        if use_own:
+            st.caption(f"AI mode will use your key: {own_spec(provider, pick_model)}.")
+        elif not HAS_KEY:
+            st.caption("No GROQ_API_KEY is configured on this deployment. Paste a key below for AI mode, "
+                       "or use rules-only mode.")
+        else:
+            st.caption("The AI pipeline takes about 4 minutes on the 3-episode demo: Groq's free tier allows ~8K tokens "
+                       "a minute per model. Rules-only returns in about a second.")
     episodes = st.text_input("Episodes (optional)", placeholder="e.g. 1-5 or 1,3,7",
                              help="Leave empty for all. The AI mode takes about a minute per episode on Groq's free tier.")
     c1, c2 = st.columns(2)
@@ -141,7 +179,13 @@ if go:
         st.warning(f"{n_eps} episodes in AI mode will take roughly {n_eps} minutes on the free tier. "
                    "Enter an episode range (e.g. 1-5) for a quicker run, or use rules-only mode.")
     out = Path(tempfile.mkdtemp(prefix="promos_"))
-    if not rules_only:
+    shared = not rules_only and not use_own        # only the deployment's own free-tier key is shared
+    own = {}
+    if not rules_only and use_own:
+        own = {"picker": own_spec(provider, pick_model), "viewer": own_spec(provider, view_model or pick_model),
+               "fallback": "groq:openai/gpt-oss-20b" if PROVIDERS[provider][0] == "groq" else None,
+               "api_key": own_key, "base_url": own_url or None, "tpm": own_tpm}
+    if shared:
         busy = claim_slot()
         if busy is not None:
             st.warning(f"Another visitor's AI run started {busy / 60:.1f} min ago and is using the shared free-tier "
@@ -152,13 +196,14 @@ if go:
         t0 = time.time()
         try:
             promos, meta = run(str(folder), show=show, episodes=episodes or None, rules_only=rules_only,
-                               montage=montage, use_viewer=use_viewer, out=str(out), quiet=True)
+                               montage=montage, use_viewer=use_viewer, out=str(out), quiet=True, **own)
         except Exception as e:                                       # show the reason, keep the app alive
             status.update(label="Run failed", state="error")
-            st.error(f"{type(e).__name__}: {str(e)[:400]}")
+            msg = str(e).replace(own_key, "***") if own_key else str(e)
+            st.error(f"{type(e).__name__}: {msg[:400]}")
             st.stop()
         finally:
-            if not rules_only:
+            if shared:
                 free_slot()
         status.update(label=f"Done in {time.time() - t0:.1f} s", state="complete", expanded=False)
     st.session_state["result"] = {
