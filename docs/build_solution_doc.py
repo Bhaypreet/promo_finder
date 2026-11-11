@@ -140,75 +140,72 @@ story = [
             f"<link href='{DRIVE}' color='#a3214f'><u>Drive folder</u></link>",
             f"<link href='{EXPLAINER}' color='#a3214f'><u>Project write-up</u></link>"]],
           [58 * mm, 52 * mm, 30 * mm, 40 * mm], zebra=False),
-    Spacer(1, 3),
-    p("Give the tool a folder or .zip of episode screenplays. It returns a ranked list of 20-60 s promos. Each one comes "
-      "with the episode and start/end time of every segment, the hook, the cliffhanger, a one-line reason it works, and "
-      "its quality-check results, as a CSV an editor can cut from directly. "
-      f"On the full input pack it found {n} promos across {eps_covered} of the 50 episodes."),
 
-    p("Problem and scope", H),
-    p("<b>Why Problem 1.</b> It is a weekly, repeated cost: an editor watches every episode of every new show to find "
-      "promo moments, and a new show ships every week. The screenplays already time-stamp every line, action and shot, so "
-      "the hard part is the editorial judgement (which moment stops a scroll, where it should end), not the cutting. "
-      "That splits cleanly: a language model for judgement, plain code for time and rules. It is also the one problem with "
-      "Kuku's own content, so every output can be checked against the real show."),
-    Spacer(1, 2.5),
-    table([["Where the brief was silent, I assumed", "What the tool does about it"],
-           ["The script timestamps match the final cut.",
-            "Every cut snaps to the nearest shot change and never lands mid-line, so small drift stays invisible; an editor can nudge."],
-           ["A promo's job is to bring <b>new</b> viewers to Episode 1.",
-            "Ranking gives early-episode promos a small bonus and penalises spoilers of late-series twists."],
-           ["Platform is TikTok / Reels / Shorts, US audience.",
-            "The 3-second hook is checked from script timing. Visual impact (framing, faces) cannot be judged from text, so an editor watches the shortlist."],
-           ["A promo can join several moments, from one or many episodes.",
-            "Segments must stay in story order, must not overlap and must total 20-60 s."],
-           ["Free tiers only.",
-            "Token-lean prompts on Groq's free models. Any stronger model, including Kuku's own APIs, is a one-flag swap."]],
-          [62 * mm, 118 * mm]),
+    p("The problem: why promos take so long today", H),
+    p("Kuku releases a new microdrama every week, about 50 short episodes each. To make promos, an editor has to watch "
+      "every episode, find moments that grab attention in the first 3 seconds and end on a cliffhanger, and note the "
+      "exact start and end times. Then each promo has to be checked by hand: is it 20-60 s, does the hook land in time, "
+      "does it end on the right line? This takes hours for every show, every week. "
+      "<b>Why I picked this problem:</b> the screenplays already give a timestamp for every line, action and camera shot. "
+      "So the slow part is reading and judging, which AI can do in minutes, and the checking is pure rules, which code "
+      "can do instantly and without mistakes."),
 
-    p("How it works", H),
-    flow(), Spacer(1, 3),
-    table([["", "Given to the language model", "Kept as code or simple rules", "Kept with a human"],
-           ["Work", "Choosing the moments; writing the hook, cliffhanger and why; fixing a pick the checker rejected; "
-                    "judging a clip cold, as a stranger would",
-            "Reading the scripts; every timestamp; shot-cut snapping; the 20-60 s and 3 s rules; candidate windows; "
-            "retrieval; the ranking formula",
-            "Final say on the top 10 (review mode); approved promos are saved and guide future shows"],
-           ["Why", "Judgement over story and emotion is what models do well",
-            "Arithmetic and hard rules must be exact and repeatable", "Taste, brand fit and spoiler calls"]],
-          [11 * mm, 58 * mm, 61 * mm, 50 * mm], zebra=False),
+    p("Input and output", H),
+    table([["Input (what I give the tool)", "Output (what it gives back)"],
+           ["A folder or .zip of episode screenplays (text files). Every line of dialogue, action, sound and camera shot "
+            "has a start and end time, e.g. <i>Start: (00:43.20) | End: (00:45.10)</i>.",
+            "A ranked list of 20-60 s promos. For each: the episode and start/end time of every segment, the hook (first "
+            "3 s), the cliffhanger it ends on, why it works, and its check results. Saved as a CSV an editor can cut from "
+            f"directly. <b>On the full pack: {n} promos across {eps_covered} of the 50 episodes, {passed} pass every check.</b>"]],
+          [80 * mm, 100 * mm], zebra=False),
 
-    p("Key design decisions", H),
-    table([["Decision", "Why it matters"],
-           ["<b>The model picks line IDs, never timestamps.</b> Each line gets an ID (B031); code turns IDs into times.",
-            "Models invent times but reference IDs reliably. Cuts land on shot changes and never mid-sentence."],
-           ["<b>Validated output with a repair loop.</b> Answers must fit a strict schema; a pick that breaks a rule goes "
-            "back to the model once, with the exact error.",
-            f"{repaired} of {n} first picks broke a rule (wrong length, overlapping segments, a late hook) and came back fixed; "
-            f"code fixed {code_fixed} more on its own."],
-           ["<b>A playbook the model retrieves from (RAG).</b> 16 proven promo patterns (public humiliation, interrupted "
-            "wedding, hidden identity) plus every promo an editor approves.",
-            f"Same model, with vs without the playbook: precision against reference promos rose from {r_20n['precision']:.2f} "
-            f"to {r_20['precision']:.2f}. The tool gets better with each approved promo."],
-           ["<b>A second, different model judges every clip cold.</b> It sees only the clip, with no show context.",
-            "The picker cannot grade its own work. This 'would a stranger stop and understand?' score is 40% of the rank."],
-           ["<b>Search, don't stuff, for cross-episode promos.</b> 1,640 short moments are indexed for the whole show.",
-            "The full show is about 45K tokens. Retrieval finds matching moments across episodes and keeps prompts small."],
-           ["<b>One setting picks the model; every answer is cached.</b>",
-            "Switching to a stronger or in-house model is one flag. Reruns cost nothing and give identical output."]],
-          [88 * mm, 92 * mm]),
-    p("Scale and cost", H),
+    p("How it works, step by step", H),
+    flow(), Spacer(1, 2.5),
+    table([["Step", "Who", "What happens, in simple words"],
+           ["<b>1. Read the scripts</b>", "Code",
+            "Each episode is split into small numbered pieces called beats (B001, B002...): one line, action or shot "
+            "each, with its start and end time. The 50 episodes give 3,727 beats."],
+           ["<b>2. Spot likely moments</b>", "Simple rules",
+            "A keyword scorer looks for drama signals (a slap, a shout, a betrayal, an angry tone) and marks the strongest "
+            "windows. These go to the AI as hints. On their own, they are also a free, instant no-AI mode."],
+           ["<b>3. Look up proven patterns</b>", "Search",
+            "A small playbook holds 16 promo patterns that work (public humiliation, interrupted wedding, hidden identity) "
+            "plus every promo an editor approves. The 3 closest to this episode are pulled in as examples."],
+           ["<b>4. AI picks the promos</b>", "AI",
+            "The AI reads the episode, the hints and the patterns, and picks promos. It answers with beat numbers, not "
+            "times, plus the hook, the cliffhanger and why it works. Its answer must fit a fixed format or it is rejected."],
+           ["<b>5. Code checks every pick</b>", "Code",
+            "Beat numbers become exact times, and cuts land on shot changes, never mid-sentence. Code checks: 20-60 s, "
+            f"hook in the first 3 s, ends on the cliffhanger. A broken pick goes back to the AI once with the exact error "
+            f"({repaired} of {n} were fixed this way); if it is still broken, it is flagged."],
+           ["<b>6. Cross-episode promos</b>", "Search + AI",
+            "The tool searches 1,640 short moments across the whole show and lets the AI join 2-4 of them into one promo."],
+           ["<b>7. A second AI watches it cold</b>", "2nd AI",
+            "A different model sees only the clip, with no story context, and scores 1-10: would I stop scrolling, do I "
+            "want the next episode, did I understand it? The picker never grades its own work."],
+           ["<b>8. Rank</b>", "Code",
+            "Score = 45% picker + 40% cold viewer + 15% rules, minus a spoiler penalty, plus a small bonus for early "
+            "episodes (they send new viewers to the start)."],
+           ["<b>9. Editor review</b>", "Human",
+            "The editor checks the top 10 and approves the best. Approved promos go back into the playbook, so the tool "
+            "gets better with every show."]],
+          [33 * mm, 18 * mm, 129 * mm], size=7.5),
+
+    p("Assumptions", H),
     *bullets([
-        f"<b>Cost per show</b> (50 episodes): {totals['calls']} model calls, about {totals['tokens'] // 1000}K tokens. "
-        "$0 on Groq's free tier; under $0.10 at Groq's published paid rates. The rules-only mode is free and runs in under a second.",
-        f"<b>Time:</b> {totals['minutes']} minutes on the free tier, set by its rate limits (about 8K tokens a minute), not "
-        "by compute. Episodes are processed in parallel, so a paid tier or an in-house model cuts this to minutes.",
-        "<b>Every show, every week:</b> a FastAPI service with a Dockerfile, plus the hosted demo. Upload a zip, get the "
-        "cut list. Model answers and the search index are cached, so reruns are free.",
-        "<b>Editor time</b> goes from watching every episode to reviewing a ranked top 10. "
-        "<b>Next measure:</b> each posted promo's 3-second view rate, click-through and Episode 1-to-5 retention, used to re-weight the ranking.",
+        "<b>The script times match the final video.</b> Cuts snap to shot changes, so a small difference is invisible and an editor can nudge it.",
+        "<b>Text cannot show faces, acting or framing.</b> The tool judges the story and the words; an editor watches the shortlist for the visuals.",
+        "<b>A promo's job is to bring new viewers to Episode 1,</b> so early episodes get a bonus and big late twists are penalised.",
+        "<b>Free tools only.</b> Everything runs on free tiers; a stronger model is a setting, not a code change.",
     ], S),
 
+    p("The AI I used", H),
+    p("Three models, all on Groq's free tier: <b>gpt-oss-120b</b> picks the promos (gpt-oss-20b as a backup), "
+      "<b>Qwen3.8-27b</b> is the cold viewer, and a small embedding model powers the pattern search. A different model, "
+      "including Kuku's own API, can be used by pasting its key in the app. Every answer is saved, so a rerun costs "
+      f"nothing. <b>Cost per show:</b> {totals['calls']} model calls, about {totals['tokens'] // 1000}K tokens, $0 on the "
+      f"free tier (under $0.10 at paid rates), {totals['minutes']} minutes because of the free tier's speed limit. "
+      "<b>Editor time</b> goes from watching every episode to reviewing a ranked top 10.", S),
 ]
 
 # ---------- page 2 ----------
@@ -271,22 +268,22 @@ story += [
         "its Episode 45 pick opens on \"Wife?!\" 6 s before the reference cut, and the cold viewer rated it 8/9/9.",
     ], S),
 
-    p("Limitations: the five that matter", H),
-    table([["Limitation", "In simple words, with a real example", "What I do about it"],
-           ["<b>1. It reads text, not video</b>", "It cannot see acting, faces or framing. A slap that reads well on "
-            "paper can look weak on screen.", "An editor watches the top 10 before posting: about 10 minutes per show."],
-           ["<b>2. Many clips need context</b>", "Scenes start mid-story, so a stranger may not know who is who. "
-            "Cold viewers understood clips 4.1/10 on average.",
-            "Understanding is 40% of the rank, so confusing clips sink (top 10 average 6.1/10)."],
-           ["<b>3. It misses spoilers</b>", "It does not know which reveal is the show's big twist. The #1 promo "
-            "(Ep 45) gives away the Duke twist, and the model rated the risk 'low'.",
-            "The editor decides. Next: a per-show 'never reveal' list the model must respect."],
-           ["<b>4. Cross-episode montages are weak</b>", "Joining moments from different episodes loses the thread. "
-            "One demo montage scored 2/10 with the cold viewer.", "Kept, but ranked low. Next: only join 2-3 nearby episodes."],
-           ["<b>5. My test set is small</b>", "13 reference promos picked by me in 8 episodes: one person's taste. "
-            "The main model matched 46% of them, often choosing a different, also good, moment.",
-            "Next: real results from posted promos (3-second view rate, Episode 1 clicks) to tune the ranking."]],
-          [36 * mm, 82 * mm, 62 * mm], size=7.4),
+    p("Limitations (technical)", H),
+    table([["Limitation", "What it means", "How I handle it, or what I would do next"],
+           ["<b>1. Free-tier speed limit</b>", f"Groq's free tier allows about 8K tokens a minute, so the tool waits between "
+            f"calls: about 5 minutes for the 3-episode demo, {totals['minutes']} minutes for 50 episodes. The hosted app "
+            "runs one AI run at a time.", "Rules-only mode is instant. A paid key or Kuku's own API removes the wait."],
+           ["<b>2. The AI does not always follow rules</b>", f"Even when told the rules, it broke one in {repaired} of {n} "
+            "first picks (wrong length, late hook, overlapping parts).", "Code checks every pick, sends it back once, "
+            "and flags what is still wrong. The AI never decides times."],
+           ["<b>3. AI scores are opinions, not real data</b>", "The picker rates almost all its picks 8-9/10, and the cold "
+            "viewer is also a model, not a real audience.", "The picker is only 45% of the rank. Next: use real 3-second "
+            "view rates and Episode 1 clicks."],
+           ["<b>4. Depends on the script format</b>", "The reader expects this exact screenplay format and English text, "
+            "and trusts its timestamps.", "Reading is plain code, so a new format is a small change. Cuts snap to shots."],
+           ["<b>5. Small test set</b>", "I measured quality against 13 promos I picked by hand in 8 episodes: one "
+            "person's taste.", "Next: more reference promos from Kuku's editors, and real performance data."]],
+          [40 * mm, 78 * mm, 62 * mm], size=7.4),
 
     p("Deployment, and what went wrong when I used it", H),
     p(f"I deployed the prototype on <b>Streamlit Community Cloud</b> "
