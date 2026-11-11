@@ -237,11 +237,8 @@ story += [
     *bullets([
         "<b>Post first: the premise.</b> Episodes 5 and 1 set up the whole show (jilted at the altar, then cast out). A cold viewer "
         "understood both (8/10), and they send new viewers to the start, where the payoff is immediate.",
-        "<b>Then the visual shocks.</b> The fire rescue and the branding iron are the strongest stop-the-scroll openings.",
         "<b>Hold the #1 pick for retargeting.</b> Episode 45 scores highest on every signal, but it gives away the title "
         "twist. It works best on people already watching. Catching this is the editor's job in review mode.",
-        "Ranking: 45% picker scores + 40% cold viewer + 15% rule scorer, minus a spoiler penalty, plus an early-episode "
-        "bonus. Every promo, with all segments, hook, cliffhanger and why, is in <i>promos_cutlist.csv</i>.",
     ], S),
 
     p("Quality checks", H),
@@ -274,17 +271,22 @@ story += [
         "its Episode 45 pick opens on \"Wife?!\" 6 s before the reference cut, and the cold viewer rated it 8/9/9.",
     ], S),
 
-    p("Where it picks badly, and what handles it", H),
-    table([["Weak spot", "Why", "How it is handled"],
-           ["Many clips need context", "Microdrama scenes start mid-story; a stranger can miss who is who and why it matters.",
-            "The cold viewer's score is 40% of the rank, so these clips sink: the top 10 average 6.1/10 on understanding vs 4.1 overall."],
-           ["Spoilers are under-flagged", "The model cannot tell which reveal is the show's big twist (it marked Ep 45 'low').",
-            "Editor review of the top 10. Next: a per-show 'never reveal' list in the knowledge base."],
-           ["Text cannot see the picture", "A badly framed slap still reads well on paper.",
-            "The editor watches the shortlist, about 10 minutes per show instead of every episode."],
-           ["Cross-episode montages are weakest", "Moments from different episodes need bridging context.",
-            "Kept, but ranked low. Next: limit them to 2-3 moments from neighbouring episodes."]],
-          [38 * mm, 66 * mm, 76 * mm], size=7.4),
+    p("Limitations: the five that matter", H),
+    table([["Limitation", "In simple words, with a real example", "What I do about it"],
+           ["<b>1. It reads text, not video</b>", "It cannot see acting, faces or framing. A slap that reads well on "
+            "paper can look weak on screen.", "An editor watches the top 10 before posting: about 10 minutes per show."],
+           ["<b>2. Many clips need context</b>", "Scenes start mid-story, so a stranger may not know who is who. "
+            "Cold viewers understood clips 4.1/10 on average.",
+            "Understanding is 40% of the rank, so confusing clips sink (top 10 average 6.1/10)."],
+           ["<b>3. It misses spoilers</b>", "It does not know which reveal is the show's big twist. The #1 promo "
+            "(Ep 45) gives away the Duke twist, and the model rated the risk 'low'.",
+            "The editor decides. Next: a per-show 'never reveal' list the model must respect."],
+           ["<b>4. Cross-episode montages are weak</b>", "Joining moments from different episodes loses the thread. "
+            "One demo montage scored 2/10 with the cold viewer.", "Kept, but ranked low. Next: only join 2-3 nearby episodes."],
+           ["<b>5. My test set is small</b>", "13 reference promos picked by me in 8 episodes: one person's taste. "
+            "The main model matched 46% of them, often choosing a different, also good, moment.",
+            "Next: real results from posted promos (3-second view rate, Episode 1 clicks) to tune the ranking."]],
+          [36 * mm, 82 * mm, 62 * mm], size=7.4),
 
     p("Deployment, and what went wrong when I used it", H),
     p(f"I deployed the prototype on <b>Streamlit Community Cloud</b> "
@@ -305,11 +307,10 @@ story += [
     p("Tools used, and where they got it wrong", H),
     p("<b>Building:</b> Claude Code as a coding assistant for the parser, pipeline, evaluation scripts and first drafts "
       "of this doc. <b>Inside the tool:</b> Groq gpt-oss-120b picks promos (gpt-oss-20b as fallback), Groq Qwen3.8-27b "
-      "is the cold viewer, FastEmbed bge-small powers retrieval; LangGraph, LangChain, FAISS and Pydantic hold it together. "
+      "is the cold viewer, FastEmbed bge-small powers retrieval. "
       f"<b>Where they got it wrong:</b> the picker broke a hard rule in {repaired} of {n} first picks: clips from 13 s to "
-      "88 s, overlapping segments, and once a 'hook' 67 s into the clip. The validator caught every one. The cold viewer at "
-      "first scored nearly every clip 1-2/10, even clips it had summarised correctly, until it was given a scoring guide "
-      "with an example for each level.", S),
+      "88 s, overlapping segments, a 'hook' 67 s into the clip; the validator caught every one. The cold viewer first "
+      "scored almost every clip 1-2/10 until I gave it a scoring guide with examples.", S),
 ]
 
 out = ROOT / "docs" / "Solution_Doc.pdf"
