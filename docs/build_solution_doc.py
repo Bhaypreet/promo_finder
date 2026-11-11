@@ -25,7 +25,7 @@ promos = run["promos"]
 ev = {r["run"]: r for r in json.loads((ROOT / "outputs" / "eval_results.json").read_text(encoding="utf-8"))}
 ev_random = next(v for k, v in ev.items() if k.startswith("random"))
 totals = json.loads((ROOT / "docs" / "facts.json").read_text(encoding="utf-8"))["totals"]
-DRIVE = "https://drive.google.com/drive/folders/1QTSzxsaEqu4_PbWOeR150AJ3hQIbad43"
+DRIVE = "https://drive.google.com/drive/folders/1G4FuM1NyiZzReQy1DgDPFu1RNAMkp0bv"
 DEMO = "https://promo-finder-demo.streamlit.app"
 REPO = "https://github.com/Bhaypreet/promo_finder"
 EXPLAINER = "https://claude.ai/artifact/G2XiCpShwi8UBUUFpgb8bV"
